@@ -5,7 +5,7 @@ const path = require("path");
 const serverPort = parseInt(process.argv[2]);
 const statsFilePath = process.argv[3];
 
-const clientBuiltPath = path.join(__dirname, "app");
+const clientBuiltPath = path.join(__dirname, "../console/build");
 const app = express();
 
 app.use(express.static(clientBuiltPath));
