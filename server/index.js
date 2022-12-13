@@ -2,7 +2,7 @@ const express = require("express");
 const path = require("path");
 const request = require("request");
 
-const serverPort = parseInt(process.argv[2] ?? 80);
+const serverPort = process.env.PORT || 3000;
 const statsFilePath = "http://automobilista.ddns.net:8081/";
 const clientBuiltPath = path.join(__dirname, "../build");
 const app = express();
