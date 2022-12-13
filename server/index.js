@@ -1,11 +1,10 @@
 const express = require("express");
-const fs = require("fs");
 const path = require("path");
+const request = require("request");
 
-const serverPort = parseInt(process.argv[2]);
-const statsFilePath = process.argv[3];
-
-const clientBuiltPath = path.join(__dirname, "../console/build");
+const serverPort = parseInt(process.argv[2] ?? 80);
+const statsFilePath = "http://automobilista.ddns.net:8081/";
+const clientBuiltPath = path.join(__dirname, "../build");
 const app = express();
 
 app.use(express.static(clientBuiltPath));
@@ -19,19 +18,17 @@ app.get(
 app.get(
     "/stats",
     (req, res) => {
-        const statsFileData =
-            fs.readFileSync(
-                statsFilePath,
-                {
-                    encoding: "utf8",
-                    flag: "r"
-                });
+        request.get(
+            statsFilePath,
+            (err, fileRes, statsFileData) => {
+                if (!err) {
+                    const dataStartIndex = statsFileData.indexOf("{");
+                    const dataEndIndex = statsFileData.lastIndexOf("}") + 1;
 
-        const dataStartIndex = statsFileData.indexOf("{");
-        const dataEndIndex = statsFileData.lastIndexOf("}") + 1;
-
-        res.contentType("application/json");
-        res.send(statsFileData.slice(dataStartIndex, dataEndIndex));
+                    res.contentType("application/json");
+                    res.send(statsFileData.slice(dataStartIndex, dataEndIndex));
+                }
+            });
     });
 
 console.log(
