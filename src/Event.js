@@ -27,13 +27,14 @@ export function Event({event}) {
                 event.stageNameToPlayerNameToDataMap,
                 (playerNameToDataMap, stageName) =>
                     <Stage
+                        event={event}
                         key={stageName}
                         playerNameToDataMap={playerNameToDataMap}
                         stageName={stageName}/>)}
         </Stack>);
 }
 
-function Stage({playerNameToDataMap, stageName}) {
+function Stage({event, playerNameToDataMap, stageName}) {
     const playerBestLaps =
         useMemo(
             () =>
@@ -44,9 +45,14 @@ function Stage({playerNameToDataMap, stageName}) {
                             name: playerName,
                             ..._.minBy(
                                 playerData,
-                                playerData => playerData.lapTime)
+                                playerData =>
+                                    playerData.lapTime)
                         })).
-                    orderBy(playerBestLap => playerBestLap.lapTime).
+                    orderBy(
+                        playerBestLap =>
+                            event.type === "race"
+                                ? playerBestLap.position
+                                : playerBestLap.lapTime).
                     value(),
             []);
 

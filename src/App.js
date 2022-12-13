@@ -12,7 +12,6 @@ const store =
     createFetchStore(
         async () => {
             const res = await fetch("/stats");
-            //const res = await fetch("/sms_stats_data.json");
             const data = await res.json();
             return data;
         });
@@ -75,10 +74,7 @@ export function App() {
                     (event, eventIndex) =>
                         <ListItemButton
                             key={eventIndex}
-                            style={{
-                                padding: 10,
-                                width: 500
-                            }}
+                            style={{padding: 10}}
                             onClick={() => setSelectedEvent(event)}>
                             <Stack
                                 alignItems="center"
