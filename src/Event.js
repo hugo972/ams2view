@@ -4,7 +4,7 @@ import _ from "lodash";
 import moment from "moment";
 import {useMemo} from "react";
 import {Date} from "./Date";
-import {getTrackName} from "./utils";
+import {getPlayerName, getTrackName} from "./utils";
 import {EventPlayersChip, EventTypeChip} from "./EventChips";
 
 export function Event({event}) {
@@ -24,25 +24,25 @@ export function Event({event}) {
                 <EventPlayersChip event={event}/>
             </Stack>
             {_.map(
-                event.stageNameToPlayerNameToDataMap,
-                (playerNameToDataMap, stageName) =>
+                event.stageNameToPlayerDataMap,
+                (playerDataMap, stageName) =>
                     <Stage
                         event={event}
                         key={stageName}
-                        playerNameToDataMap={playerNameToDataMap}
+                        playerDataMap={playerDataMap}
                         stageName={stageName}/>)}
         </Stack>);
 }
 
-function Stage({event, playerNameToDataMap, stageName}) {
+function Stage({event, playerDataMap, stageName}) {
     const playerBestLaps =
         useMemo(
             () =>
-                _(playerNameToDataMap).
+                _(playerDataMap).
                     map(
-                        (playerData, playerName) => ({
+                        (playerData, playerId) => ({
                             laps: _.size(playerData),
-                            name: playerName,
+                            name: getPlayerName(playerId),
                             ..._.minBy(
                                 playerData,
                                 playerData =>

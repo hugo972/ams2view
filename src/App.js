@@ -11,7 +11,10 @@ import {EventPlayersChip, EventTypeChip} from "./EventChips";
 const store =
     createFetchStore(
         async () => {
-            const res = await fetch("/stats");
+            const res =
+                window.location.hostname === "localhost"
+                    ? await fetch("/testdata.json")
+                    : await fetch("/stats");
             const data = await res.json();
             return data;
         });
@@ -31,7 +34,7 @@ export function App() {
                         record => record.start_time);
                 for (const record of records) {
                     const event = getEvent(record);
-                    if (_.isEmpty(event.stageNameToPlayerNameToDataMap)) {
+                    if (_.isEmpty(event.stageNameToPlayerDataMap)) {
                         continue;
                     }
 
@@ -41,18 +44,19 @@ export function App() {
                         currentEvent?.type === "practice") {
                         currentEvent.endTime = event.endTime;
                         currentEvent.events++;
-                        currentEvent.stageNameToPlayerNameToDataMap =
+                        currentEvent.stageNameToPlayerDataMap =
                             _.mergeWith(
-                                currentEvent.stageNameToPlayerNameToDataMap,
-                                event.stageNameToPlayerNameToDataMap,
-                                (playerNameToDataMap, otherPlayerNameToDataMap) =>
+                                currentEvent.stageNameToPlayerDataMap,
+                                event.stageNameToPlayerDataMap,
+                                (playerDataMap, otherPlayerDataMap) =>
                                     _.mergeWith(
-                                        playerNameToDataMap,
-                                        otherPlayerNameToDataMap,
-                                        (playerData, otherPlayerData) => _(playerData).
-                                            concat(otherPlayerData).
-                                            filter().
-                                            value()));
+                                        playerDataMap,
+                                        otherPlayerDataMap,
+                                        (playerData, otherPlayerData) =>
+                                            _(playerData).
+                                                concat(otherPlayerData).
+                                                filter().
+                                                value()));
                     } else {
                         events.push(event);
                     }
@@ -115,7 +119,7 @@ function getEvent(record) {
                 : "qualifying";
     }
 
-    const stageNameToPlayerNameToDataMap =
+    const stageNameToPlayerDataMap =
         _(record.stages).
             mapValues(
                 stage =>
@@ -124,7 +128,7 @@ function getEvent(record) {
                             event =>
                                 event.event_name === "Lap" &&
                                 event.is_player).
-                        groupBy(event => event.name).
+                        groupBy(event => record.participants[event.participantid].SteamID).
                         mapValues(
                             events =>
                                 _.map(
@@ -143,13 +147,13 @@ function getEvent(record) {
                                                 value()
                                     }))).
                         value()).
-            pickBy(playerNameToDataMap => !_.isEmpty(playerNameToDataMap)).
+            pickBy(playerDataMap => !_.isEmpty(playerDataMap)).
             value();
 
     return {
         endTime: record.end_time,
         events: 1,
-        stageNameToPlayerNameToDataMap,
+        stageNameToPlayerDataMap,
         startTime: record.start_time,
         trackId: record.setup.TrackId,
         type: eventType

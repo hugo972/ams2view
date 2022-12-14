@@ -19,7 +19,7 @@ export function EventPlayersChip({event}) {
         <Chip
             label={
                 _.size(
-                    _(event.stageNameToPlayerNameToDataMap).
+                    _(event.stageNameToPlayerDataMap).
                         values().
                         first()) + " Players"}
             size="small"/>);
