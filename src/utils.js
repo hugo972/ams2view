@@ -14,6 +14,7 @@ export function getPlayerName(playerId) {
         "76561199217542200": "Avihai",
         "76561199262975610": "Barak",
         "76561198847610319": "Yoram",
+        "76561199005801087": "Tom",
         "76561198830567733": "Tzion"
     }[playerId] ?? playerId;
 }
