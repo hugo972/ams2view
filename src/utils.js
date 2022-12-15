@@ -6,6 +6,16 @@
     }[trackId] ?? trackId;
 }
 
+export function getStageName(stageName) {
+    return (
+        stageName.
+            charAt(0).
+            toUpperCase() +
+        stageName.
+            substring(1, stageName.length - 1).
+            toLowerCase());
+}
+
 export function getPlayerName(playerId) {
     return {
         "76561199217542200": "Avihai",

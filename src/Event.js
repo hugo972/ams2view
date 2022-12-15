@@ -4,7 +4,7 @@ import _ from "lodash";
 import moment from "moment";
 import {useMemo} from "react";
 import {Date} from "./Date";
-import {getPlayerName, getTrackName} from "./utils";
+import {getPlayerName, getStageName, getTrackName} from "./utils";
 import {EventPlayersChip, EventTypeChip} from "./EventChips";
 
 export function Event({event}) {
@@ -35,25 +35,50 @@ export function Event({event}) {
 }
 
 function Stage({event, playerDataMap, stageName}) {
-    const playerBestLaps =
+    const [bestSectors, playerLapDatas] =
         useMemo(
-            () =>
-                _(playerDataMap).
-                    map(
-                        (playerData, playerId) => ({
-                            laps: _.size(playerData),
-                            name: getPlayerName(playerId),
-                            ..._.minBy(
-                                playerData,
-                                playerData =>
-                                    playerData.lapTime)
-                        })).
-                    orderBy(
-                        playerBestLap =>
-                            event.type === "race"
-                                ? playerBestLap.position
-                                : playerBestLap.lapTime).
-                    value(),
+            () => {
+                const playerLapDatas =
+                    _(playerDataMap).
+                        map(
+                            (playerData, playerId) => ({
+                                bestLap:
+                                    _.minBy(
+                                        playerData,
+                                        playerData =>
+                                            playerData.lapTime),
+                                laps: _.size(playerData),
+                                name: getPlayerName(playerId),
+                                potentialLapSectors:
+                                    _.reduce(
+                                        playerData,
+                                        (potential, playerData) =>
+                                            _(potential).
+                                                zip(playerData.sectors).
+                                                map(_.min).
+                                                value(),
+                                        [])
+                            })).
+                        orderBy(
+                            playerBestLap =>
+                                event.type === "race"
+                                    ? playerBestLap.position
+                                    : playerBestLap.bestLap.lapTime).
+                        value();
+
+                const bestSectors =
+                    _(playerLapDatas).
+                        map(playerLapData => playerLapData.bestLap.sectors).
+                        reduce(
+                            (bestSectors, playerLapBestSectors) =>
+                                _(playerLapBestSectors).
+                                    zip(bestSectors).
+                                    map(_.min).
+                                    value(),
+                            []);
+
+                return [bestSectors, playerLapDatas];
+            },
             []);
 
     return (
@@ -61,7 +86,7 @@ function Stage({event, playerDataMap, stageName}) {
             spacing={1}
             style={{padding: 20}}>
             <Typography style={{fontSize: "1.5rem"}}>
-                {stageName}
+                {getStageName(stageName)}
             </Typography>
             <Table>
                 <TableHead>
@@ -76,7 +101,7 @@ function Stage({event, playerDataMap, stageName}) {
                             Best Time
                         </TableCell>
                         {_.map(
-                            playerBestLaps[0].sectors,
+                            playerLapDatas[0].bestLap.sectors,
                             (sector, sectorIndex) =>
                                 <TableCell key={sectorIndex}>
                                     Best Time (Sector {sectorIndex + 1})
@@ -85,26 +110,53 @@ function Stage({event, playerDataMap, stageName}) {
                 </TableHead>
                 <TableBody>
                     {_.map(
-                        playerBestLaps,
-                        playerBestLap =>
-                            <TableRow key={playerBestLap.name}>
+                        playerLapDatas,
+                        playerLapData =>
+                            <TableRow key={playerLapData.name}>
                                 <TableCell>
-                                    {playerBestLap.name}
+                                    <Typography>
+                                        {playerLapData.name}
+                                    </Typography>
                                 </TableCell>
                                 <TableCell>
-                                    {playerBestLap.laps}
+                                    <Typography>
+                                        {playerLapData.laps}
+                                    </Typography>
                                 </TableCell>
                                 <TableCell>
-                                    {moment.duration(playerBestLap.lapTime, "milliseconds").
+                                    <Typography>
+                                        {moment.
+                                            duration(playerLapData.bestLap.lapTime, "milliseconds").
                                             format("m:ss.SSS")}
+                                    </Typography>
+                                    <Typography style={{fontSize: "0.6rem"}}>
+                                        {moment.
+                                            duration(_.sum(playerLapData.potentialLapSectors), "milliseconds").
+                                            format("(m:ss.SSS)")}
+                                    </Typography>
                                 </TableCell>
                                 {_.map(
-                                    playerBestLap.sectors,
+                                    playerLapData.bestLap.sectors,
                                     (sector, sectorIndex) =>
-                                        <TableCell key={sectorIndex}>
-                                            {moment.
-                                                duration(sector, "milliseconds").
-                                                format("m:ss.SSS")}
+                                        <TableCell
+                                            key={sectorIndex}
+                                            style={
+                                                sector === bestSectors[sectorIndex]
+                                                    ? {
+                                                        backgroundColor: "rgb(170 122 255)",
+                                                        color: "white"
+                                                    }
+                                                    : undefined}>
+                                            <Typography>
+                                                {moment.
+                                                    duration(sector, "milliseconds").
+                                                    format("m:ss.SSS")}
+                                            </Typography>
+                                            <Typography style={{fontSize: "0.6rem"}}>
+                                                {moment.
+                                                    duration(playerLapData.potentialLapSectors[sectorIndex], "milliseconds").
+                                                    format("(m:ss.SSS)")}
+                                            </Typography>
                                         </TableCell>)}
                             </TableRow>)}
                 </TableBody>
