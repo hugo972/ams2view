@@ -112,7 +112,7 @@ function Stage({event, playerDataMap, stageName}) {
                 <TableBody>
                     {_.map(
                         playerLapDatas,
-                        playerLapData =>
+                        (playerLapData, playerLapDataIndex) =>
                             <TableRow key={playerLapData.name}>
                                 <TableCell>
                                     <Typography>
@@ -128,11 +128,32 @@ function Stage({event, playerDataMap, stageName}) {
                                     </Typography>
                                 </TableCell>
                                 <TableCell>
-                                    <Typography>
-                                        {moment.
-                                            duration(playerLapData.bestLap.lapTime, "milliseconds").
-                                            format("m:ss.SSS")}
-                                    </Typography>
+                                    <Stack
+                                        alignItems="center"
+                                        direction="row"
+                                        spacing={1}>
+                                        <Typography>
+                                            {moment.
+                                                duration(playerLapData.bestLap.lapTime, "milliseconds").
+                                                format("m:ss.SSS")}
+                                        </Typography>
+                                        {playerLapDataIndex > 0 &&
+                                            <Typography
+                                                style={{
+                                                    color: "#c01717",
+                                                    fontSize: "0.6rem",
+                                                    fontWeight: 600
+                                                }}>
+                                                {moment.
+                                                    duration(playerLapData.bestLap.lapTime - playerLapDatas[0].bestLap.lapTime, "milliseconds").
+                                                    format(
+                                                        "+s.SSS",
+                                                        {
+                                                            trim: "both",
+                                                            stopTrim: "s"
+                                                        })}
+                                            </Typography>}
+                                    </Stack>
                                     <Typography style={{fontSize: "0.6rem"}}>
                                         {moment.
                                             duration(_.sum(playerLapData.potentialLapSectors), "milliseconds").
