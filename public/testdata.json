@@ -1,5 +1,5 @@
 {
-  "next_history_index" : 14,
+  "next_history_index" : 20,
   "stats" : {
     "history" : [
       {
@@ -5920,11 +5920,137 @@
         "start_time" : 1671033899
       },
       {
-        "end_time" : 0,
+        "end_time" : 1671055483,
         "finished" : false,
         "index" : 13,
+        "members" : {
+          "59841" : {
+            "index" : 1,
+            "join_time" : 1671052189,
+            "leave_time" : 1671055483,
+            "name" : "saardekel",
+            "participantid" : 1,
+            "setup" : {
+              "LiveryId" : 70,
+              "RaceStatFlags" : 1073747204,
+              "VehicleId" : 1785300635
+            },
+            "steamid" : "76561198883944056"
+          }
+        },
+        "participants" : {
+          "0" : {
+            "IsPlayer" : 1,
+            "LiveryId" : 55,
+            "Name" : "Tom M",
+            "RefId" : 47232,
+            "SteamID" : "76561199005801087",
+            "VehicleId" : 1785300635
+          },
+          "1" : {
+            "IsPlayer" : 1,
+            "LiveryId" : 70,
+            "Name" : "",
+            "RefId" : 59841,
+            "SteamID" : "76561198883944056",
+            "VehicleId" : 1785300635
+          }
+        },
+        "setup" : {
+          "AllowedCutsBeforePenalty" : 3,
+          "AllowedViews" : 0,
+          "DamageRandomFailures" : 0,
+          "DamageScale" : 2,
+          "DamageType" : 1,
+          "DisablePitstopRefuelling" : 1,
+          "DriveThroughPenalty" : 1,
+          "Flags" : 118227760,
+          "FuelUsageType" : 0,
+          "FullCourseYellows" : 0,
+          "GridLayout" : 4,
+          "GridSize" : 16,
+          "ManualPitStops" : 1,
+          "ManualRollingStarts" : 0,
+          "MaxPlayers" : 14,
+          "MinimumOnlineRank" : 0,
+          "MinimumOnlineStrength" : 100,
+          "MultiClassSlot1" : -1,
+          "MultiClassSlot2" : -1,
+          "MultiClassSlot3" : -1,
+          "MultiClassSlot4" : -1,
+          "MultiClassSlot5" : -1,
+          "MultiClassSlot6" : -1,
+          "MultiClassSlot7" : -1,
+          "MultiClassSlot8" : -1,
+          "MultiClassSlot9" : -1,
+          "MultiClassSlots" : 0,
+          "OpponentDifficulty" : 0,
+          "PenaltiesType" : 0,
+          "PitWhiteLinePenalty" : 1,
+          "PracticeDateHour" : 14,
+          "PracticeDateProgression" : 1,
+          "PracticeLength" : 120,
+          "PracticeLiveTrackPreset" : 0,
+          "PracticeWeatherProgression" : 1,
+          "PracticeWeatherSlot1" : 2067843977,
+          "PracticeWeatherSlot2" : -1293634875,
+          "PracticeWeatherSlot3" : -1293634875,
+          "PracticeWeatherSlot4" : -1293634875,
+          "PracticeWeatherSlots" : 4,
+          "QualifyDateHour" : 0,
+          "QualifyDateProgression" : 0,
+          "QualifyLength" : 0,
+          "QualifyLiveTrackPreset" : 0,
+          "QualifyWeatherProgression" : 0,
+          "QualifyWeatherSlot1" : 296956818,
+          "QualifyWeatherSlot2" : -934211870,
+          "QualifyWeatherSlot3" : 296956818,
+          "QualifyWeatherSlot4" : -934211870,
+          "QualifyWeatherSlots" : 0,
+          "RaceDateDay" : 11,
+          "RaceDateHour" : 10,
+          "RaceDateMonth" : 7,
+          "RaceDateProgression" : 1,
+          "RaceDateYear" : 2020,
+          "RaceExtraLap" : 0,
+          "RaceFormationLap" : 0,
+          "RaceLength" : 1,
+          "RaceLiveTrackPreset" : 0,
+          "RaceMandatoryPitStops" : 0,
+          "RaceRollingStart" : 0,
+          "RaceWeatherProgression" : 1,
+          "RaceWeatherSlot1" : -1293634875,
+          "RaceWeatherSlot2" : -1293634875,
+          "RaceWeatherSlot3" : -1293634875,
+          "RaceWeatherSlot4" : 1461703858,
+          "RaceWeatherSlots" : 0,
+          "ServerControlsSetup" : 0,
+          "ServerControlsTrack" : 1,
+          "ServerControlsVehicle" : 0,
+          "ServerControlsVehicleClass" : 1,
+          "TireWearType" : 6,
+          "TrackId" : 1820168870,
+          "VehicleClassId" : -1338470134,
+          "VehicleModelId" : 1785300635
+        },
+        "stages" : {},
+        "start_time" : 1671041145
+      },
+      {
+        "end_time" : 1671075838,
+        "finished" : false,
+        "index" : 14,
         "members" : {},
-        "participants" : {},
+        "participants" : {
+          "0" : {
+            "IsPlayer" : 1,
+            "LiveryId" : 57,
+            "Name" : "Saturn010111",
+            "RefId" : 34112,
+            "SteamID" : "76561198085065530",
+            "VehicleId" : 1785300635
+          }
+        },
         "setup" : {
           "AllowedCutsBeforePenalty" : 3,
           "AllowedViews" : 0,
@@ -5961,11 +6087,11 @@
           "PracticeLength" : 120,
           "PracticeLiveTrackPreset" : 0,
           "PracticeWeatherProgression" : 1,
-          "PracticeWeatherSlot1" : 2067843977,
-          "PracticeWeatherSlot2" : -1293634875,
-          "PracticeWeatherSlot3" : -1293634875,
-          "PracticeWeatherSlot4" : -1293634875,
-          "PracticeWeatherSlots" : 4,
+          "PracticeWeatherSlot1" : 296956818,
+          "PracticeWeatherSlot2" : -934211870,
+          "PracticeWeatherSlot3" : -934211870,
+          "PracticeWeatherSlot4" : -934211870,
+          "PracticeWeatherSlots" : 0,
           "QualifyDateHour" : 14,
           "QualifyDateProgression" : 1,
           "QualifyLength" : 0,
@@ -6002,8 +6128,2775 @@
           "VehicleClassId" : -1338470134,
           "VehicleModelId" : 1785300635
         },
-        "stages" : {},
-        "start_time" : 1671041145
+        "stages" : {
+          "practice1" : {
+            "end_time" : 1671075838,
+            "events" : [
+              {
+                "attributes" : {
+                  "NewState" : "Racing",
+                  "PreviousState" : "InGarage"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "Saturn010111",
+                "participantid" : 0,
+                "refid" : 34112,
+                "time" : 1671075358
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 7066,
+                  "Lap" : 0,
+                  "LapTime" : 98088,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28806,
+                  "Sector2Time" : 35622,
+                  "Sector3Time" : 33660
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "Saturn010111",
+                "participantid" : 0,
+                "refid" : 34112,
+                "time" : 1671075555
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 3542,
+                  "Lap" : 1,
+                  "LapTime" : 97249,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28248,
+                  "Sector2Time" : 35424,
+                  "Sector3Time" : 33577
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "Saturn010111",
+                "participantid" : 0,
+                "refid" : 34112,
+                "time" : 1671075653
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 1000,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "Saturn010111",
+                "participantid" : 0,
+                "refid" : 34112,
+                "time" : 1671075728
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 842,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "Saturn010111",
+                "participantid" : 0,
+                "refid" : 34112,
+                "time" : 1671075729
+              },
+              {
+                "attributes" : {
+                  "NewState" : "InGarage",
+                  "PreviousState" : "Racing"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "Saturn010111",
+                "participantid" : 0,
+                "refid" : 34112,
+                "time" : 1671075735
+              }
+            ],
+            "results" : {},
+            "start_time" : 1671075339
+          }
+        },
+        "start_time" : 1671075311
+      },
+      {
+        "end_time" : 1671099573,
+        "finished" : false,
+        "index" : 15,
+        "members" : {},
+        "participants" : {
+          "0" : {
+            "IsPlayer" : 1,
+            "LiveryId" : 57,
+            "Name" : "Tom M",
+            "RefId" : 16768,
+            "SteamID" : "76561199005801087",
+            "VehicleId" : 1785300635
+          }
+        },
+        "setup" : {
+          "AllowedCutsBeforePenalty" : 3,
+          "AllowedViews" : 0,
+          "DamageRandomFailures" : 0,
+          "DamageScale" : 0,
+          "DamageType" : 1,
+          "DisablePitstopRefuelling" : 0,
+          "DriveThroughPenalty" : 1,
+          "Flags" : 252445488,
+          "FuelUsageType" : 0,
+          "FullCourseYellows" : 0,
+          "GridLayout" : 0,
+          "GridSize" : 14,
+          "ManualPitStops" : 1,
+          "ManualRollingStarts" : 1,
+          "MaxPlayers" : 14,
+          "MinimumOnlineRank" : 0,
+          "MinimumOnlineStrength" : 100,
+          "MultiClassSlot1" : -1,
+          "MultiClassSlot2" : -1,
+          "MultiClassSlot3" : -1,
+          "MultiClassSlot4" : -1,
+          "MultiClassSlot5" : -1,
+          "MultiClassSlot6" : -1,
+          "MultiClassSlot7" : -1,
+          "MultiClassSlot8" : -1,
+          "MultiClassSlot9" : -1,
+          "MultiClassSlots" : 0,
+          "OpponentDifficulty" : 80,
+          "PenaltiesType" : 0,
+          "PitWhiteLinePenalty" : 1,
+          "PracticeDateHour" : 14,
+          "PracticeDateProgression" : 1,
+          "PracticeLength" : 120,
+          "PracticeLiveTrackPreset" : 0,
+          "PracticeWeatherProgression" : 1,
+          "PracticeWeatherSlot1" : 1461703858,
+          "PracticeWeatherSlot2" : 1461703858,
+          "PracticeWeatherSlot3" : 129238383,
+          "PracticeWeatherSlot4" : 129238383,
+          "PracticeWeatherSlots" : 0,
+          "QualifyDateHour" : 14,
+          "QualifyDateProgression" : 1,
+          "QualifyLength" : 0,
+          "QualifyLiveTrackPreset" : 0,
+          "QualifyWeatherProgression" : 1,
+          "QualifyWeatherSlot1" : 296956818,
+          "QualifyWeatherSlot2" : -934211870,
+          "QualifyWeatherSlot3" : 296956818,
+          "QualifyWeatherSlot4" : -934211870,
+          "QualifyWeatherSlots" : 0,
+          "RaceDateDay" : 15,
+          "RaceDateHour" : 14,
+          "RaceDateMonth" : 8,
+          "RaceDateProgression" : 1,
+          "RaceDateYear" : 2022,
+          "RaceExtraLap" : 0,
+          "RaceFormationLap" : 0,
+          "RaceLength" : 0,
+          "RaceLiveTrackPreset" : 0,
+          "RaceMandatoryPitStops" : 0,
+          "RaceRollingStart" : 0,
+          "RaceWeatherProgression" : 1,
+          "RaceWeatherSlot1" : 296956818,
+          "RaceWeatherSlot2" : -934211870,
+          "RaceWeatherSlot3" : 296956818,
+          "RaceWeatherSlot4" : -934211870,
+          "RaceWeatherSlots" : 0,
+          "ServerControlsSetup" : 0,
+          "ServerControlsTrack" : 1,
+          "ServerControlsVehicle" : 0,
+          "ServerControlsVehicleClass" : 1,
+          "TireWearType" : 6,
+          "TrackId" : 1820168870,
+          "VehicleClassId" : -1338470134,
+          "VehicleModelId" : 1785300635
+        },
+        "stages" : {
+          "practice1" : {
+            "end_time" : 1671099573,
+            "events" : [
+              {
+                "attributes" : {
+                  "NewState" : "Racing",
+                  "PreviousState" : "InGarage"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "Tom M",
+                "participantid" : 0,
+                "refid" : 16768,
+                "time" : 1671096554
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 7088,
+                  "Lap" : 0,
+                  "LapTime" : 105611,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 33710,
+                  "Sector2Time" : 37081,
+                  "Sector3Time" : 34820
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "Tom M",
+                "participantid" : 0,
+                "refid" : 16768,
+                "time" : 1671096763
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 3550,
+                  "Lap" : 1,
+                  "LapTime" : 97899,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28417,
+                  "Sector2Time" : 35968,
+                  "Sector3Time" : 33514
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "Tom M",
+                "participantid" : 0,
+                "refid" : 16768,
+                "time" : 1671096861
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 3554,
+                  "Lap" : 2,
+                  "LapTime" : 97700,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28324,
+                  "Sector2Time" : 36038,
+                  "Sector3Time" : 33337
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "Tom M",
+                "participantid" : 0,
+                "refid" : 16768,
+                "time" : 1671096959
+              },
+              {
+                "attributes" : {
+                  "NewState" : "InGarage",
+                  "PreviousState" : "Racing"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "Tom M",
+                "participantid" : 0,
+                "refid" : 16768,
+                "time" : 1671097067
+              },
+              {
+                "attributes" : {
+                  "NewState" : "Racing",
+                  "PreviousState" : "InGarage"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "Tom M",
+                "participantid" : 0,
+                "refid" : 16768,
+                "time" : 1671098332
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 679,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "Tom M",
+                "participantid" : 0,
+                "refid" : 16768,
+                "time" : 1671098412
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 9079,
+                  "Lap" : 3,
+                  "LapTime" : 98447,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28881,
+                  "Sector2Time" : 35894,
+                  "Sector3Time" : 33672
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "Tom M",
+                "participantid" : 0,
+                "refid" : 16768,
+                "time" : 1671098553
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 385,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "Tom M",
+                "participantid" : 0,
+                "refid" : 16768,
+                "time" : 1671098635
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 3555,
+                  "Lap" : 4,
+                  "LapTime" : 101175,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28753,
+                  "Sector2Time" : 35940,
+                  "Sector3Time" : 36482
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "Tom M",
+                "participantid" : 0,
+                "refid" : 16768,
+                "time" : 1671098654
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 3537,
+                  "Lap" : 5,
+                  "LapTime" : 106588,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 29300,
+                  "Sector2Time" : 42661,
+                  "Sector3Time" : 34627
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "Tom M",
+                "participantid" : 0,
+                "refid" : 16768,
+                "time" : 1671098760
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 3555,
+                  "Lap" : 6,
+                  "LapTime" : 97175,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28033,
+                  "Sector2Time" : 35960,
+                  "Sector3Time" : 33182
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "Tom M",
+                "participantid" : 0,
+                "refid" : 16768,
+                "time" : 1671098858
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 3594,
+                  "Lap" : 7,
+                  "LapTime" : 203382,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 130711,
+                  "Sector2Time" : 39005,
+                  "Sector3Time" : 33666
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "Tom M",
+                "participantid" : 0,
+                "refid" : 16768,
+                "time" : 1671099061
+              },
+              {
+                "attributes" : {
+                  "NewState" : "InGarage",
+                  "PreviousState" : "Racing"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "Tom M",
+                "participantid" : 0,
+                "refid" : 16768,
+                "time" : 1671099142
+              },
+              {
+                "attributes" : {
+                  "NewState" : "Racing",
+                  "PreviousState" : "InGarage"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "Tom M",
+                "participantid" : 0,
+                "refid" : 16768,
+                "time" : 1671099155
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 9802,
+                  "Lap" : 8,
+                  "LapTime" : 98150,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28506,
+                  "Sector2Time" : 35658,
+                  "Sector3Time" : 33986
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "Tom M",
+                "participantid" : 0,
+                "refid" : 16768,
+                "time" : 1671099350
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 3543,
+                  "Lap" : 9,
+                  "LapTime" : 96458,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28060,
+                  "Sector2Time" : 35179,
+                  "Sector3Time" : 33219
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "Tom M",
+                "participantid" : 0,
+                "refid" : 16768,
+                "time" : 1671099446
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 1000,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "Tom M",
+                "participantid" : 0,
+                "refid" : 16768,
+                "time" : 1671099504
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 1000,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "Tom M",
+                "participantid" : 0,
+                "refid" : 16768,
+                "time" : 1671099504
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 1000,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "Tom M",
+                "participantid" : 0,
+                "refid" : 16768,
+                "time" : 1671099504
+              },
+              {
+                "attributes" : {
+                  "NewState" : "InGarage",
+                  "PreviousState" : "Racing"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "Tom M",
+                "participantid" : 0,
+                "refid" : 16768,
+                "time" : 1671099514
+              }
+            ],
+            "results" : {},
+            "start_time" : 1671096435
+          }
+        },
+        "start_time" : 1671096394
+      },
+      {
+        "end_time" : 1671116820,
+        "finished" : false,
+        "index" : 16,
+        "members" : {},
+        "participants" : {
+          "0" : {
+            "IsPlayer" : 1,
+            "LiveryId" : 59,
+            "Name" : "23289leviavihai",
+            "RefId" : 63424,
+            "SteamID" : "76561199217542200",
+            "VehicleId" : 1785300635
+          }
+        },
+        "setup" : {
+          "AllowedCutsBeforePenalty" : 3,
+          "AllowedViews" : 0,
+          "DamageRandomFailures" : 0,
+          "DamageScale" : 0,
+          "DamageType" : 1,
+          "DisablePitstopRefuelling" : 0,
+          "DriveThroughPenalty" : 1,
+          "Flags" : 252445488,
+          "FuelUsageType" : 0,
+          "FullCourseYellows" : 0,
+          "GridLayout" : 0,
+          "GridSize" : 14,
+          "ManualPitStops" : 1,
+          "ManualRollingStarts" : 1,
+          "MaxPlayers" : 14,
+          "MinimumOnlineRank" : 0,
+          "MinimumOnlineStrength" : 100,
+          "MultiClassSlot1" : -1,
+          "MultiClassSlot2" : -1,
+          "MultiClassSlot3" : -1,
+          "MultiClassSlot4" : -1,
+          "MultiClassSlot5" : -1,
+          "MultiClassSlot6" : -1,
+          "MultiClassSlot7" : -1,
+          "MultiClassSlot8" : -1,
+          "MultiClassSlot9" : -1,
+          "MultiClassSlots" : 0,
+          "OpponentDifficulty" : 80,
+          "PenaltiesType" : 0,
+          "PitWhiteLinePenalty" : 1,
+          "PracticeDateHour" : 14,
+          "PracticeDateProgression" : 1,
+          "PracticeLength" : 120,
+          "PracticeLiveTrackPreset" : 0,
+          "PracticeWeatherProgression" : 1,
+          "PracticeWeatherSlot1" : -934211870,
+          "PracticeWeatherSlot2" : -934211870,
+          "PracticeWeatherSlot3" : -934211870,
+          "PracticeWeatherSlot4" : -934211870,
+          "PracticeWeatherSlots" : 0,
+          "QualifyDateHour" : 14,
+          "QualifyDateProgression" : 1,
+          "QualifyLength" : 0,
+          "QualifyLiveTrackPreset" : 0,
+          "QualifyWeatherProgression" : 1,
+          "QualifyWeatherSlot1" : 296956818,
+          "QualifyWeatherSlot2" : -934211870,
+          "QualifyWeatherSlot3" : 296956818,
+          "QualifyWeatherSlot4" : -934211870,
+          "QualifyWeatherSlots" : 0,
+          "RaceDateDay" : 15,
+          "RaceDateHour" : 14,
+          "RaceDateMonth" : 8,
+          "RaceDateProgression" : 1,
+          "RaceDateYear" : 2022,
+          "RaceExtraLap" : 0,
+          "RaceFormationLap" : 0,
+          "RaceLength" : 0,
+          "RaceLiveTrackPreset" : 0,
+          "RaceMandatoryPitStops" : 0,
+          "RaceRollingStart" : 0,
+          "RaceWeatherProgression" : 1,
+          "RaceWeatherSlot1" : 296956818,
+          "RaceWeatherSlot2" : -934211870,
+          "RaceWeatherSlot3" : 296956818,
+          "RaceWeatherSlot4" : -934211870,
+          "RaceWeatherSlots" : 0,
+          "ServerControlsSetup" : 0,
+          "ServerControlsTrack" : 1,
+          "ServerControlsVehicle" : 0,
+          "ServerControlsVehicleClass" : 1,
+          "TireWearType" : 6,
+          "TrackId" : 1820168870,
+          "VehicleClassId" : -1338470134,
+          "VehicleModelId" : 1785300635
+        },
+        "stages" : {
+          "practice1" : {
+            "end_time" : 1671116820,
+            "events" : [
+              {
+                "attributes" : {
+                  "NewState" : "Racing",
+                  "PreviousState" : "InGarage"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "23289leviavihai",
+                "participantid" : 0,
+                "refid" : 63424,
+                "time" : 1671114522
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 7060,
+                  "Lap" : 0,
+                  "LapTime" : 98777,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 29180,
+                  "Sector2Time" : 36388,
+                  "Sector3Time" : 33209
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "23289leviavihai",
+                "participantid" : 0,
+                "refid" : 63424,
+                "time" : 1671114721
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 3537,
+                  "Lap" : 1,
+                  "LapTime" : 98525,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28900,
+                  "Sector2Time" : 35997,
+                  "Sector3Time" : 33628
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "23289leviavihai",
+                "participantid" : 0,
+                "refid" : 63424,
+                "time" : 1671114819
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 3575,
+                  "Lap" : 2,
+                  "LapTime" : 111334,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28400,
+                  "Sector2Time" : 47303,
+                  "Sector3Time" : 35632
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "23289leviavihai",
+                "participantid" : 0,
+                "refid" : 63424,
+                "time" : 1671114930
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 3535,
+                  "Lap" : 3,
+                  "LapTime" : 97740,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28415,
+                  "Sector2Time" : 35631,
+                  "Sector3Time" : 33694
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "23289leviavihai",
+                "participantid" : 0,
+                "refid" : 63424,
+                "time" : 1671115028
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 3654,
+                  "Lap" : 4,
+                  "LapTime" : 121321,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 30941,
+                  "Sector2Time" : 56272,
+                  "Sector3Time" : 34108
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "23289leviavihai",
+                "participantid" : 0,
+                "refid" : 63424,
+                "time" : 1671115149
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 3539,
+                  "Lap" : 5,
+                  "LapTime" : 98632,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28994,
+                  "Sector2Time" : 35948,
+                  "Sector3Time" : 33690
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "23289leviavihai",
+                "participantid" : 0,
+                "refid" : 63424,
+                "time" : 1671115248
+              },
+              {
+                "attributes" : {
+                  "NewState" : "InGarage",
+                  "PreviousState" : "Racing"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "23289leviavihai",
+                "participantid" : 0,
+                "refid" : 63424,
+                "time" : 1671115276
+              },
+              {
+                "attributes" : {
+                  "NewState" : "Racing",
+                  "PreviousState" : "InGarage"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "23289leviavihai",
+                "participantid" : 0,
+                "refid" : 63424,
+                "time" : 1671115294
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 7964,
+                  "Lap" : 6,
+                  "LapTime" : 100240,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28960,
+                  "Sector2Time" : 37483,
+                  "Sector3Time" : 33797
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "23289leviavihai",
+                "participantid" : 0,
+                "refid" : 63424,
+                "time" : 1671115498
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 3556,
+                  "Lap" : 7,
+                  "LapTime" : 110338,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28905,
+                  "Sector2Time" : 45921,
+                  "Sector3Time" : 35512
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "23289leviavihai",
+                "participantid" : 0,
+                "refid" : 63424,
+                "time" : 1671115609
+              },
+              {
+                "attributes" : {
+                  "NewState" : "InGarage",
+                  "PreviousState" : "Racing"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "23289leviavihai",
+                "participantid" : 0,
+                "refid" : 63424,
+                "time" : 1671115633
+              },
+              {
+                "attributes" : {
+                  "NewState" : "Racing",
+                  "PreviousState" : "InGarage"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "23289leviavihai",
+                "participantid" : 0,
+                "refid" : 63424,
+                "time" : 1671116152
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 7965,
+                  "Lap" : 8,
+                  "LapTime" : 97998,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28664,
+                  "Sector2Time" : 35894,
+                  "Sector3Time" : 33440
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "23289leviavihai",
+                "participantid" : 0,
+                "refid" : 63424,
+                "time" : 1671116347
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 3545,
+                  "Lap" : 9,
+                  "LapTime" : 97522,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28642,
+                  "Sector2Time" : 35336,
+                  "Sector3Time" : 33544
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "23289leviavihai",
+                "participantid" : 0,
+                "refid" : 63424,
+                "time" : 1671116444
+              },
+              {
+                "attributes" : {
+                  "NewState" : "InGarage",
+                  "PreviousState" : "Racing"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "23289leviavihai",
+                "participantid" : 0,
+                "refid" : 63424,
+                "time" : 1671116463
+              },
+              {
+                "attributes" : {
+                  "NewState" : "Racing",
+                  "PreviousState" : "InGarage"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "23289leviavihai",
+                "participantid" : 0,
+                "refid" : 63424,
+                "time" : 1671116479
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 7550,
+                  "Lap" : 10,
+                  "LapTime" : 125776,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28818,
+                  "Sector2Time" : 37209,
+                  "Sector3Time" : 59749
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "23289leviavihai",
+                "participantid" : 0,
+                "refid" : 63424,
+                "time" : 1671116701
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 1000,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "23289leviavihai",
+                "participantid" : 0,
+                "refid" : 63424,
+                "time" : 1671116813
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 314,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "23289leviavihai",
+                "participantid" : 0,
+                "refid" : 63424,
+                "time" : 1671116813
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 891,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "23289leviavihai",
+                "participantid" : 0,
+                "refid" : 63424,
+                "time" : 1671116813
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 440,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "23289leviavihai",
+                "participantid" : 0,
+                "refid" : 63424,
+                "time" : 1671116813
+              },
+              {
+                "attributes" : {
+                  "NewState" : "InGarage",
+                  "PreviousState" : "Racing"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "23289leviavihai",
+                "participantid" : 0,
+                "refid" : 63424,
+                "time" : 1671116817
+              }
+            ],
+            "results" : {},
+            "start_time" : 1671114498
+          }
+        },
+        "start_time" : 1671114476
+      },
+      {
+        "end_time" : 1671124219,
+        "finished" : false,
+        "index" : 17,
+        "members" : {},
+        "participants" : {
+          "0" : {
+            "IsPlayer" : 1,
+            "LiveryId" : 59,
+            "Name" : "saardekel",
+            "RefId" : 30144,
+            "SteamID" : "76561198883944056",
+            "VehicleId" : 1785300635
+          }
+        },
+        "setup" : {
+          "AllowedCutsBeforePenalty" : 3,
+          "AllowedViews" : 0,
+          "DamageRandomFailures" : 0,
+          "DamageScale" : 0,
+          "DamageType" : 1,
+          "DisablePitstopRefuelling" : 0,
+          "DriveThroughPenalty" : 1,
+          "Flags" : 252445488,
+          "FuelUsageType" : 0,
+          "FullCourseYellows" : 0,
+          "GridLayout" : 0,
+          "GridSize" : 14,
+          "ManualPitStops" : 1,
+          "ManualRollingStarts" : 1,
+          "MaxPlayers" : 14,
+          "MinimumOnlineRank" : 0,
+          "MinimumOnlineStrength" : 100,
+          "MultiClassSlot1" : -1,
+          "MultiClassSlot2" : -1,
+          "MultiClassSlot3" : -1,
+          "MultiClassSlot4" : -1,
+          "MultiClassSlot5" : -1,
+          "MultiClassSlot6" : -1,
+          "MultiClassSlot7" : -1,
+          "MultiClassSlot8" : -1,
+          "MultiClassSlot9" : -1,
+          "MultiClassSlots" : 0,
+          "OpponentDifficulty" : 80,
+          "PenaltiesType" : 0,
+          "PitWhiteLinePenalty" : 1,
+          "PracticeDateHour" : 14,
+          "PracticeDateProgression" : 1,
+          "PracticeLength" : 120,
+          "PracticeLiveTrackPreset" : 0,
+          "PracticeWeatherProgression" : 1,
+          "PracticeWeatherSlot1" : -934211870,
+          "PracticeWeatherSlot2" : -934211870,
+          "PracticeWeatherSlot3" : -934211870,
+          "PracticeWeatherSlot4" : -934211870,
+          "PracticeWeatherSlots" : 0,
+          "QualifyDateHour" : 14,
+          "QualifyDateProgression" : 1,
+          "QualifyLength" : 0,
+          "QualifyLiveTrackPreset" : 0,
+          "QualifyWeatherProgression" : 1,
+          "QualifyWeatherSlot1" : 296956818,
+          "QualifyWeatherSlot2" : -934211870,
+          "QualifyWeatherSlot3" : 296956818,
+          "QualifyWeatherSlot4" : -934211870,
+          "QualifyWeatherSlots" : 0,
+          "RaceDateDay" : 15,
+          "RaceDateHour" : 14,
+          "RaceDateMonth" : 8,
+          "RaceDateProgression" : 1,
+          "RaceDateYear" : 2022,
+          "RaceExtraLap" : 0,
+          "RaceFormationLap" : 0,
+          "RaceLength" : 0,
+          "RaceLiveTrackPreset" : 0,
+          "RaceMandatoryPitStops" : 0,
+          "RaceRollingStart" : 0,
+          "RaceWeatherProgression" : 1,
+          "RaceWeatherSlot1" : 296956818,
+          "RaceWeatherSlot2" : -934211870,
+          "RaceWeatherSlot3" : 296956818,
+          "RaceWeatherSlot4" : -934211870,
+          "RaceWeatherSlots" : 0,
+          "ServerControlsSetup" : 0,
+          "ServerControlsTrack" : 1,
+          "ServerControlsVehicle" : 0,
+          "ServerControlsVehicleClass" : 1,
+          "TireWearType" : 6,
+          "TrackId" : 1820168870,
+          "VehicleClassId" : -1338470134,
+          "VehicleModelId" : 1785300635
+        },
+        "stages" : {
+          "practice1" : {
+            "end_time" : 1671124219,
+            "events" : [
+              {
+                "attributes" : {
+                  "NewState" : "Racing",
+                  "PreviousState" : "InGarage"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671119045
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 7083,
+                  "Lap" : 0,
+                  "LapTime" : 98700,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28376,
+                  "Sector2Time" : 36716,
+                  "Sector3Time" : 33608
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671119242
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 3587,
+                  "Lap" : 1,
+                  "LapTime" : 111388,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 42450,
+                  "Sector2Time" : 35841,
+                  "Sector3Time" : 33098
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671119353
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 3574,
+                  "Lap" : 2,
+                  "LapTime" : 108332,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28697,
+                  "Sector2Time" : 35539,
+                  "Sector3Time" : 44096
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671119461
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 328,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671119486
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 320,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671119487
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 602,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671119487
+              },
+              {
+                "attributes" : {
+                  "NewState" : "InGarage",
+                  "PreviousState" : "Racing"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671119496
+              },
+              {
+                "attributes" : {
+                  "NewState" : "Racing",
+                  "PreviousState" : "InGarage"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671119508
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 8157,
+                  "Lap" : 3,
+                  "LapTime" : 97910,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28490,
+                  "Sector2Time" : 36050,
+                  "Sector3Time" : 33370
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671119703
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 3540,
+                  "Lap" : 4,
+                  "LapTime" : 97456,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28325,
+                  "Sector2Time" : 35775,
+                  "Sector3Time" : 33356
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671119800
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 3543,
+                  "Lap" : 5,
+                  "LapTime" : 99163,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 29980,
+                  "Sector2Time" : 36008,
+                  "Sector3Time" : 33174
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671119899
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 3552,
+                  "Lap" : 6,
+                  "LapTime" : 97396,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28725,
+                  "Sector2Time" : 35063,
+                  "Sector3Time" : 33608
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671119997
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 3546,
+                  "Lap" : 7,
+                  "LapTime" : 97547,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28548,
+                  "Sector2Time" : 35740,
+                  "Sector3Time" : 33260
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671120094
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 664,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671120134
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 430,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671120135
+              },
+              {
+                "attributes" : {
+                  "NewState" : "InGarage",
+                  "PreviousState" : "Racing"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671120142
+              },
+              {
+                "attributes" : {
+                  "NewState" : "Racing",
+                  "PreviousState" : "InGarage"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671120153
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 8556,
+                  "Lap" : 8,
+                  "LapTime" : 97541,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28594,
+                  "Sector2Time" : 35371,
+                  "Sector3Time" : 33575
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671120346
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 1000,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671120408
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 863,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671120408
+              },
+              {
+                "attributes" : {
+                  "NewState" : "InGarage",
+                  "PreviousState" : "Racing"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671120413
+              },
+              {
+                "attributes" : {
+                  "NewState" : "Racing",
+                  "PreviousState" : "InGarage"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671120580
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 1000,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671120754
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 1000,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671120754
+              },
+              {
+                "attributes" : {
+                  "NewState" : "InGarage",
+                  "PreviousState" : "Racing"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671120760
+              },
+              {
+                "attributes" : {
+                  "NewState" : "Racing",
+                  "PreviousState" : "InGarage"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671120778
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 15707,
+                  "Lap" : 9,
+                  "LapTime" : 111948,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28344,
+                  "Sector2Time" : 48160,
+                  "Sector3Time" : 35444
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671120995
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 3545,
+                  "Lap" : 10,
+                  "LapTime" : 96881,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28340,
+                  "Sector2Time" : 35387,
+                  "Sector3Time" : 33154
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671121091
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 3557,
+                  "Lap" : 11,
+                  "LapTime" : 105091,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28485,
+                  "Sector2Time" : 35332,
+                  "Sector3Time" : 41274
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671121197
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 3558,
+                  "Lap" : 12,
+                  "LapTime" : 100154,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28337,
+                  "Sector2Time" : 37907,
+                  "Sector3Time" : 33909
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671121297
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 3541,
+                  "Lap" : 13,
+                  "LapTime" : 96396,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28251,
+                  "Sector2Time" : 35199,
+                  "Sector3Time" : 32946
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671121393
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 3546,
+                  "Lap" : 14,
+                  "LapTime" : 96277,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28192,
+                  "Sector2Time" : 35102,
+                  "Sector3Time" : 32984
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671121489
+              },
+              {
+                "attributes" : {
+                  "NewState" : "InGarage",
+                  "PreviousState" : "Racing"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671121566
+              },
+              {
+                "attributes" : {
+                  "NewState" : "Racing",
+                  "PreviousState" : "InGarage"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671122229
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 9280,
+                  "Lap" : 15,
+                  "LapTime" : 104117,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28437,
+                  "Sector2Time" : 41059,
+                  "Sector3Time" : 34622
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671122442
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 3563,
+                  "Lap" : 16,
+                  "LapTime" : 108489,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 39080,
+                  "Sector2Time" : 35826,
+                  "Sector3Time" : 33583
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671122550
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 3592,
+                  "Lap" : 17,
+                  "LapTime" : 115529,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 46769,
+                  "Sector2Time" : 35298,
+                  "Sector3Time" : 33462
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671122666
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 3550,
+                  "Lap" : 18,
+                  "LapTime" : 100076,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 31500,
+                  "Sector2Time" : 35249,
+                  "Sector3Time" : 33327
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671122766
+              },
+              {
+                "attributes" : {
+                  "NewState" : "InGarage",
+                  "PreviousState" : "Racing"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671122809
+              },
+              {
+                "attributes" : {
+                  "NewState" : "Racing",
+                  "PreviousState" : "InGarage"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671122838
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 816,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671123014
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 942,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671123014
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 435,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671123014
+              },
+              {
+                "attributes" : {
+                  "NewState" : "InGarage",
+                  "PreviousState" : "Racing"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671123022
+              },
+              {
+                "attributes" : {
+                  "NewState" : "Racing",
+                  "PreviousState" : "InGarage"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671123047
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 14646,
+                  "Lap" : 19,
+                  "LapTime" : 97390,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28537,
+                  "Sector2Time" : 35612,
+                  "Sector3Time" : 33241
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671123239
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 3586,
+                  "Lap" : 20,
+                  "LapTime" : 108817,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 40007,
+                  "Sector2Time" : 35330,
+                  "Sector3Time" : 33480
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671123348
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 1000,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671123428
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 1000,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671123428
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 308,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671123428
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 415,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671123428
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 3582,
+                  "Lap" : 21,
+                  "LapTime" : 111982,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28162,
+                  "Sector2Time" : 35207,
+                  "Sector3Time" : 48613
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671123460
+              },
+              {
+                "attributes" : {
+                  "NewState" : "InGarage",
+                  "PreviousState" : "Racing"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671123478
+              },
+              {
+                "attributes" : {
+                  "NewState" : "Racing",
+                  "PreviousState" : "InGarage"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671123490
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 7551,
+                  "Lap" : 22,
+                  "LapTime" : 97492,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28475,
+                  "Sector2Time" : 35226,
+                  "Sector3Time" : 33791
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671123682
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 1000,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671123694
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 1000,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671123694
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 988,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671123694
+              },
+              {
+                "attributes" : {
+                  "NewState" : "InGarage",
+                  "PreviousState" : "Racing"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671123707
+              },
+              {
+                "attributes" : {
+                  "NewState" : "Racing",
+                  "PreviousState" : "InGarage"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671123733
+              },
+              {
+                "attributes" : {
+                  "NewState" : "InGarage",
+                  "PreviousState" : "Racing"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671123954
+              },
+              {
+                "attributes" : {
+                  "NewState" : "Racing",
+                  "PreviousState" : "InGarage"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671123965
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 11654,
+                  "Lap" : 23,
+                  "LapTime" : 98237,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28674,
+                  "Sector2Time" : 36194,
+                  "Sector3Time" : 33369
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671124159
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 1000,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671124185
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 1000,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671124185
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 363,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671124185
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 372,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671124185
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 333,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671124185
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 302,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671124185
+              },
+              {
+                "attributes" : {
+                  "NewState" : "InGarage",
+                  "PreviousState" : "Racing"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "saardekel",
+                "participantid" : 0,
+                "refid" : 30144,
+                "time" : 1671124212
+              }
+            ],
+            "results" : {},
+            "start_time" : 1671119023
+          }
+        },
+        "start_time" : 1671118994
+      },
+      {
+        "end_time" : 1671157617,
+        "finished" : false,
+        "index" : 18,
+        "members" : {},
+        "participants" : {
+          "22" : {
+            "IsPlayer" : 1,
+            "LiveryId" : 63,
+            "Name" : "Saturn010111",
+            "RefId" : 46592,
+            "SteamID" : "76561198085065530",
+            "VehicleId" : 1785300635
+          }
+        },
+        "setup" : {
+          "AllowedCutsBeforePenalty" : 3,
+          "AllowedViews" : 0,
+          "DamageRandomFailures" : 0,
+          "DamageScale" : 0,
+          "DamageType" : 1,
+          "DisablePitstopRefuelling" : 0,
+          "DriveThroughPenalty" : 1,
+          "Flags" : 252445488,
+          "FuelUsageType" : 0,
+          "FullCourseYellows" : 0,
+          "GridLayout" : 0,
+          "GridSize" : 14,
+          "ManualPitStops" : 1,
+          "ManualRollingStarts" : 1,
+          "MaxPlayers" : 14,
+          "MinimumOnlineRank" : 0,
+          "MinimumOnlineStrength" : 100,
+          "MultiClassSlot1" : -1,
+          "MultiClassSlot2" : -1,
+          "MultiClassSlot3" : -1,
+          "MultiClassSlot4" : -1,
+          "MultiClassSlot5" : -1,
+          "MultiClassSlot6" : -1,
+          "MultiClassSlot7" : -1,
+          "MultiClassSlot8" : -1,
+          "MultiClassSlot9" : -1,
+          "MultiClassSlots" : 0,
+          "OpponentDifficulty" : 80,
+          "PenaltiesType" : 0,
+          "PitWhiteLinePenalty" : 1,
+          "PracticeDateHour" : 14,
+          "PracticeDateProgression" : 1,
+          "PracticeLength" : 120,
+          "PracticeLiveTrackPreset" : 0,
+          "PracticeWeatherProgression" : 1,
+          "PracticeWeatherSlot1" : 296956818,
+          "PracticeWeatherSlot2" : -934211870,
+          "PracticeWeatherSlot3" : -934211870,
+          "PracticeWeatherSlot4" : -934211870,
+          "PracticeWeatherSlots" : 0,
+          "QualifyDateHour" : 14,
+          "QualifyDateProgression" : 1,
+          "QualifyLength" : 0,
+          "QualifyLiveTrackPreset" : 0,
+          "QualifyWeatherProgression" : 1,
+          "QualifyWeatherSlot1" : 296956818,
+          "QualifyWeatherSlot2" : -934211870,
+          "QualifyWeatherSlot3" : 296956818,
+          "QualifyWeatherSlot4" : -934211870,
+          "QualifyWeatherSlots" : 0,
+          "RaceDateDay" : 15,
+          "RaceDateHour" : 14,
+          "RaceDateMonth" : 8,
+          "RaceDateProgression" : 1,
+          "RaceDateYear" : 2022,
+          "RaceExtraLap" : 0,
+          "RaceFormationLap" : 0,
+          "RaceLength" : 0,
+          "RaceLiveTrackPreset" : 0,
+          "RaceMandatoryPitStops" : 0,
+          "RaceRollingStart" : 0,
+          "RaceWeatherProgression" : 1,
+          "RaceWeatherSlot1" : 296956818,
+          "RaceWeatherSlot2" : -934211870,
+          "RaceWeatherSlot3" : 296956818,
+          "RaceWeatherSlot4" : -934211870,
+          "RaceWeatherSlots" : 0,
+          "ServerControlsSetup" : 0,
+          "ServerControlsTrack" : 1,
+          "ServerControlsVehicle" : 0,
+          "ServerControlsVehicleClass" : 1,
+          "TireWearType" : 6,
+          "TrackId" : 1820168870,
+          "VehicleClassId" : -1338470134,
+          "VehicleModelId" : 1785300635
+        },
+        "stages" : {
+          "practice1" : {
+            "end_time" : 1671157617,
+            "events" : [
+              {
+                "attributes" : {
+                  "NewState" : "Racing",
+                  "PreviousState" : "InGarage"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "Saturn010111",
+                "participantid" : 22,
+                "refid" : 46592,
+                "time" : 1671156120
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 7065,
+                  "Lap" : 0,
+                  "LapTime" : 97973,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28660,
+                  "Sector2Time" : 35408,
+                  "Sector3Time" : 33906
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "Saturn010111",
+                "participantid" : 22,
+                "refid" : 46592,
+                "time" : 1671156315
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 3541,
+                  "Lap" : 1,
+                  "LapTime" : 97164,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28797,
+                  "Sector2Time" : 35166,
+                  "Sector3Time" : 33201
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "Saturn010111",
+                "participantid" : 22,
+                "refid" : 46592,
+                "time" : 1671156412
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 3551,
+                  "Lap" : 2,
+                  "LapTime" : 97339,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28296,
+                  "Sector2Time" : 35483,
+                  "Sector3Time" : 33560
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "Saturn010111",
+                "participantid" : 22,
+                "refid" : 46592,
+                "time" : 1671156509
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 3547,
+                  "Lap" : 3,
+                  "LapTime" : 96768,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28348,
+                  "Sector2Time" : 35303,
+                  "Sector3Time" : 33117
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "Saturn010111",
+                "participantid" : 22,
+                "refid" : 46592,
+                "time" : 1671156606
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 3545,
+                  "Lap" : 4,
+                  "LapTime" : 96707,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28392,
+                  "Sector2Time" : 35213,
+                  "Sector3Time" : 33102
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "Saturn010111",
+                "participantid" : 22,
+                "refid" : 46592,
+                "time" : 1671156703
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 3545,
+                  "Lap" : 5,
+                  "LapTime" : 96939,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28209,
+                  "Sector2Time" : 35371,
+                  "Sector3Time" : 33359
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "Saturn010111",
+                "participantid" : 22,
+                "refid" : 46592,
+                "time" : 1671156800
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 3546,
+                  "Lap" : 6,
+                  "LapTime" : 96557,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28238,
+                  "Sector2Time" : 35305,
+                  "Sector3Time" : 33014
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "Saturn010111",
+                "participantid" : 22,
+                "refid" : 46592,
+                "time" : 1671156896
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 3545,
+                  "Lap" : 7,
+                  "LapTime" : 96358,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28162,
+                  "Sector2Time" : 35124,
+                  "Sector3Time" : 33072
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "Saturn010111",
+                "participantid" : 22,
+                "refid" : 46592,
+                "time" : 1671156993
+              },
+              {
+                "attributes" : {
+                  "NewState" : "InGarage",
+                  "PreviousState" : "Racing"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "Saturn010111",
+                "participantid" : 22,
+                "refid" : 46592,
+                "time" : 1671157013
+              },
+              {
+                "attributes" : {
+                  "NewState" : "Racing",
+                  "PreviousState" : "InGarage"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "Saturn010111",
+                "participantid" : 22,
+                "refid" : 46592,
+                "time" : 1671157118
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 405,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "Saturn010111",
+                "participantid" : 22,
+                "refid" : 46592,
+                "time" : 1671157258
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 805,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "Saturn010111",
+                "participantid" : 22,
+                "refid" : 46592,
+                "time" : 1671157350
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 424,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "Saturn010111",
+                "participantid" : 22,
+                "refid" : 46592,
+                "time" : 1671157351
+              },
+              {
+                "attributes" : {
+                  "NewState" : "EnteringPits",
+                  "PreviousState" : "Racing"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "Saturn010111",
+                "participantid" : 22,
+                "refid" : 46592,
+                "time" : 1671157358
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 7769,
+                  "Lap" : 8,
+                  "LapTime" : 136945,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28439,
+                  "Sector2Time" : 55102,
+                  "Sector3Time" : 53404
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "Saturn010111",
+                "participantid" : 22,
+                "refid" : 46592,
+                "time" : 1671157360
+              },
+              {
+                "attributes" : {
+                  "NewState" : "InPits",
+                  "PreviousState" : "EnteringPits"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "Saturn010111",
+                "participantid" : 22,
+                "refid" : 46592,
+                "time" : 1671157362
+              },
+              {
+                "attributes" : {
+                  "NewState" : "ExitingPits",
+                  "PreviousState" : "InPits"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "Saturn010111",
+                "participantid" : 22,
+                "refid" : 46592,
+                "time" : 1671157367
+              },
+              {
+                "attributes" : {
+                  "NewState" : "Racing",
+                  "PreviousState" : "ExitingPits"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "Saturn010111",
+                "participantid" : 22,
+                "refid" : 46592,
+                "time" : 1671157457
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 1000,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "Saturn010111",
+                "participantid" : 22,
+                "refid" : 46592,
+                "time" : 1671157539
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 566,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "Saturn010111",
+                "participantid" : 22,
+                "refid" : 46592,
+                "time" : 1671157540
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 3590,
+                  "Lap" : 9,
+                  "LapTime" : 218870,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 131215,
+                  "Sector2Time" : 35975,
+                  "Sector3Time" : 51680
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "Saturn010111",
+                "participantid" : 22,
+                "refid" : 46592,
+                "time" : 1671157579
+              },
+              {
+                "attributes" : {
+                  "NewState" : "InGarage",
+                  "PreviousState" : "Racing"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "Saturn010111",
+                "participantid" : 22,
+                "refid" : 46592,
+                "time" : 1671157607
+              }
+            ],
+            "results" : {},
+            "start_time" : 1671156093
+          }
+        },
+        "start_time" : 1671156069
+      },
+      {
+        "end_time" : 1671179911,
+        "finished" : false,
+        "index" : 19,
+        "members" : {},
+        "participants" : [
+          {
+            "IsPlayer" : 1,
+            "LiveryId" : 64,
+            "Name" : "nst972",
+            "RefId" : 43200,
+            "SteamID" : "76561198867460999",
+            "VehicleId" : 1785300635
+          }
+        ],
+        "setup" : {
+          "AllowedCutsBeforePenalty" : 3,
+          "AllowedViews" : 0,
+          "DamageRandomFailures" : 0,
+          "DamageScale" : 0,
+          "DamageType" : 1,
+          "DisablePitstopRefuelling" : 0,
+          "DriveThroughPenalty" : 1,
+          "Flags" : 252445488,
+          "FuelUsageType" : 0,
+          "FullCourseYellows" : 0,
+          "GridLayout" : 0,
+          "GridSize" : 14,
+          "ManualPitStops" : 1,
+          "ManualRollingStarts" : 1,
+          "MaxPlayers" : 14,
+          "MinimumOnlineRank" : 0,
+          "MinimumOnlineStrength" : 100,
+          "MultiClassSlot1" : -1,
+          "MultiClassSlot2" : -1,
+          "MultiClassSlot3" : -1,
+          "MultiClassSlot4" : -1,
+          "MultiClassSlot5" : -1,
+          "MultiClassSlot6" : -1,
+          "MultiClassSlot7" : -1,
+          "MultiClassSlot8" : -1,
+          "MultiClassSlot9" : -1,
+          "MultiClassSlots" : 0,
+          "OpponentDifficulty" : 80,
+          "PenaltiesType" : 0,
+          "PitWhiteLinePenalty" : 1,
+          "PracticeDateHour" : 14,
+          "PracticeDateProgression" : 1,
+          "PracticeLength" : 120,
+          "PracticeLiveTrackPreset" : 0,
+          "PracticeWeatherProgression" : 1,
+          "PracticeWeatherSlot1" : -934211870,
+          "PracticeWeatherSlot2" : -934211870,
+          "PracticeWeatherSlot3" : -934211870,
+          "PracticeWeatherSlot4" : -934211870,
+          "PracticeWeatherSlots" : 0,
+          "QualifyDateHour" : 14,
+          "QualifyDateProgression" : 1,
+          "QualifyLength" : 0,
+          "QualifyLiveTrackPreset" : 0,
+          "QualifyWeatherProgression" : 1,
+          "QualifyWeatherSlot1" : 296956818,
+          "QualifyWeatherSlot2" : -934211870,
+          "QualifyWeatherSlot3" : 296956818,
+          "QualifyWeatherSlot4" : -934211870,
+          "QualifyWeatherSlots" : 0,
+          "RaceDateDay" : 15,
+          "RaceDateHour" : 14,
+          "RaceDateMonth" : 8,
+          "RaceDateProgression" : 1,
+          "RaceDateYear" : 2022,
+          "RaceExtraLap" : 0,
+          "RaceFormationLap" : 0,
+          "RaceLength" : 0,
+          "RaceLiveTrackPreset" : 0,
+          "RaceMandatoryPitStops" : 0,
+          "RaceRollingStart" : 0,
+          "RaceWeatherProgression" : 1,
+          "RaceWeatherSlot1" : 296956818,
+          "RaceWeatherSlot2" : -934211870,
+          "RaceWeatherSlot3" : 296956818,
+          "RaceWeatherSlot4" : -934211870,
+          "RaceWeatherSlots" : 0,
+          "ServerControlsSetup" : 0,
+          "ServerControlsTrack" : 1,
+          "ServerControlsVehicle" : 0,
+          "ServerControlsVehicleClass" : 1,
+          "TireWearType" : 6,
+          "TrackId" : 1820168870,
+          "VehicleClassId" : -1338470134,
+          "VehicleModelId" : 1785300635
+        },
+        "stages" : {
+          "practice1" : {
+            "end_time" : 1671179911,
+            "events" : [
+              {
+                "attributes" : {
+                  "NewState" : "Racing",
+                  "PreviousState" : "InGarage"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "nst972",
+                "participantid" : 1,
+                "refid" : 43200,
+                "time" : 1671178720
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 7051,
+                  "Lap" : 0,
+                  "LapTime" : 99394,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 29001,
+                  "Sector2Time" : 35858,
+                  "Sector3Time" : 34535
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "nst972",
+                "participantid" : 1,
+                "refid" : 43200,
+                "time" : 1671178920
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 3539,
+                  "Lap" : 1,
+                  "LapTime" : 98142,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28301,
+                  "Sector2Time" : 35970,
+                  "Sector3Time" : 33871
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "nst972",
+                "participantid" : 1,
+                "refid" : 43200,
+                "time" : 1671179018
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 3543,
+                  "Lap" : 2,
+                  "LapTime" : 98266,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28481,
+                  "Sector2Time" : 35781,
+                  "Sector3Time" : 34004
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "nst972",
+                "participantid" : 1,
+                "refid" : 43200,
+                "time" : 1671179116
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 3538,
+                  "Lap" : 3,
+                  "LapTime" : 98155,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28653,
+                  "Sector2Time" : 35388,
+                  "Sector3Time" : 34114
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "nst972",
+                "participantid" : 1,
+                "refid" : 43200,
+                "time" : 1671179214
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 3542,
+                  "Lap" : 4,
+                  "LapTime" : 97654,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28635,
+                  "Sector2Time" : 35498,
+                  "Sector3Time" : 33520
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "nst972",
+                "participantid" : 1,
+                "refid" : 43200,
+                "time" : 1671179312
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 3543,
+                  "Lap" : 5,
+                  "LapTime" : 97422,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28365,
+                  "Sector2Time" : 35516,
+                  "Sector3Time" : 33541
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "nst972",
+                "participantid" : 1,
+                "refid" : 43200,
+                "time" : 1671179409
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 3536,
+                  "Lap" : 6,
+                  "LapTime" : 97252,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28121,
+                  "Sector2Time" : 35381,
+                  "Sector3Time" : 33749
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "nst972",
+                "participantid" : 1,
+                "refid" : 43200,
+                "time" : 1671179507
+              },
+              {
+                "attributes" : {
+                  "NewState" : "InGarage",
+                  "PreviousState" : "Racing"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "nst972",
+                "participantid" : 1,
+                "refid" : 43200,
+                "time" : 1671179546
+              },
+              {
+                "attributes" : {
+                  "NewState" : "Racing",
+                  "PreviousState" : "InGarage"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "nst972",
+                "participantid" : 1,
+                "refid" : 43200,
+                "time" : 1671179858
+              },
+              {
+                "attributes" : {
+                  "NewState" : "InGarage",
+                  "PreviousState" : "Racing"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "nst972",
+                "participantid" : 1,
+                "refid" : 43200,
+                "time" : 1671179875
+              }
+            ],
+            "results" : {},
+            "start_time" : 1671178697
+          }
+        },
+        "start_time" : 1671178661
       }
     ],
     "players" : {
@@ -6020,19 +8913,19 @@
             "states" : {}
           },
           "race_finishes" : 0,
-          "race_joins" : 3,
+          "race_joins" : 5,
           "race_loads" : 0,
           "race_loads_done" : 0,
           "track_distances" : {
-            "1820168870" : 38265
+            "1820168870" : 92117
           },
           "tracks" : {},
           "vehicle_distances" : {
-            "1785300635" : 38265
+            "1785300635" : 92117
           },
           "vehicles" : {}
         },
-        "last_joined" : 1670982806,
+        "last_joined" : 1671156068,
         "name" : "Saturn010111"
       },
       "76561198830567733" : {
@@ -6104,19 +8997,19 @@
             "states" : {}
           },
           "race_finishes" : 0,
-          "race_joins" : 1,
+          "race_joins" : 2,
           "race_loads" : 0,
           "race_loads_done" : 0,
           "track_distances" : {
-            "1820168870" : 76906
+            "1820168870" : 105198
           },
           "tracks" : {},
           "vehicle_distances" : {
-            "1785300635" : 76906
+            "1785300635" : 105198
           },
           "vehicles" : {}
         },
-        "last_joined" : 1670965280,
+        "last_joined" : 1671178660,
         "name" : "nst972"
       },
       "76561198883944056" : {
@@ -6132,22 +9025,22 @@
             "states" : {}
           },
           "race_finishes" : 0,
-          "race_joins" : 2,
-          "race_loads" : 1,
-          "race_loads_done" : 1,
+          "race_joins" : 4,
+          "race_loads" : 2,
+          "race_loads_done" : 2,
           "track_distances" : {
-            "1820168870" : 125821
+            "1820168870" : 363029
           },
           "tracks" : {},
           "vehicle_distances" : {
-            "1785300635" : 125821
+            "1785300635" : 363029
           },
           "vehicles" : {}
         },
-        "last_joined" : 1671037009,
+        "last_joined" : 1671118993,
         "name" : "saardekel"
       },
-      "76561199217542200" : {
+      "76561199005801087" : {
         "counts" : {
           "qualify" : {
             "positions" : {},
@@ -6164,15 +9057,43 @@
           "race_loads" : 0,
           "race_loads_done" : 0,
           "track_distances" : {
-            "1820168870" : 136032
+            "1820168870" : 208160
           },
           "tracks" : {},
           "vehicle_distances" : {
-            "1785300635" : 136032
+            "1785300635" : 208160
           },
           "vehicles" : {}
         },
-        "last_joined" : 1671033899,
+        "last_joined" : 1671096394,
+        "name" : "Tom M"
+      },
+      "76561199217542200" : {
+        "counts" : {
+          "qualify" : {
+            "positions" : {},
+            "positions_per_size" : {},
+            "states" : {}
+          },
+          "race" : {
+            "positions" : {},
+            "positions_per_size" : {},
+            "states" : {}
+          },
+          "race_finishes" : 0,
+          "race_joins" : 3,
+          "race_loads" : 0,
+          "race_loads_done" : 0,
+          "track_distances" : {
+            "1820168870" : 191512
+          },
+          "tracks" : {},
+          "vehicle_distances" : {
+            "1785300635" : 191512
+          },
+          "vehicles" : {}
+        },
+        "last_joined" : 1671114475,
         "name" : "23289leviavihai"
       },
       "76561199262975610" : {
@@ -6209,33 +9130,33 @@
       "steam_disconnects" : 0,
       "steam_downtime" : 0,
       "total_steam_downtime" : 0,
-      "total_uptime" : "145921",
-      "uptime" : "10799.4"
+      "total_uptime" : "281203",
+      "uptime" : "146081"
     },
     "session" : {
       "counts" : {
-        "lobbies" : 13,
+        "lobbies" : 19,
         "player_finishes" : 0,
         "player_loads" : 0,
         "player_loads_done" : 0,
         "race_finishes" : 1,
-        "race_loads" : 12,
-        "race_loads_done" : 12,
-        "sessions" : 12,
+        "race_loads" : 19,
+        "race_loads_done" : 19,
+        "sessions" : 18,
         "stage_counts" : {
-          "practice1" : 12
+          "practice1" : 18
         },
         "stage_durations" : {
-          "practice1" : 14943857
+          "practice1" : 28836669
         },
         "track_distances" : {
-          "1820168870" : 485776
+          "1820168870" : 1068768
         },
         "tracks" : {
-          "1820168870" : 12
+          "1820168870" : 19
         },
         "vehicle_distances" : {
-          "1785300635" : 485776
+          "1785300635" : 1068768
         },
         "vehicles" : {}
       }

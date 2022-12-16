@@ -4,7 +4,7 @@ import _ from "lodash";
 import moment from "moment";
 import {useMemo} from "react";
 import {Date} from "./Date";
-import {getPlayerName, getStageName, getTrackName} from "./utils";
+import {getPlayerName, getStageName, getTrackName, getVehicleName} from "./utils";
 import {EventPlayersChip, EventTypeChip} from "./EventChips";
 
 export function Event({event}) {
@@ -41,23 +41,24 @@ function Stage({event, playerDataMap, stageName}) {
                 const playerLapDatas =
                     _(playerDataMap).
                         map(
-                            (playerData, playerId) => ({
+                            (playerDatas, playerId) => ({
                                 bestLap:
                                     _.minBy(
-                                        playerData,
+                                        playerDatas,
                                         playerData =>
                                             playerData.lapTime),
-                                laps: _.size(playerData),
+                                laps: _.size(playerDatas),
                                 name: getPlayerName(playerId),
                                 potentialLapSectors:
                                     _.reduce(
-                                        playerData,
+                                        playerDatas,
                                         (potential, playerData) =>
                                             _(potential).
                                                 zip(playerData.sectors).
                                                 map(_.min).
                                                 value(),
-                                        [])
+                                        []),
+                                vehicleId: playerDatas[0].vehicleId
                             })).
                         orderBy(
                             playerBestLap =>
@@ -116,6 +117,9 @@ function Stage({event, playerDataMap, stageName}) {
                                 <TableCell>
                                     <Typography>
                                         {playerLapData.name}
+                                    </Typography>
+                                    <Typography style={{fontSize: "0.6rem"}}>
+                                        {getVehicleName(playerLapData.vehicleId)}
                                     </Typography>
                                 </TableCell>
                                 <TableCell>

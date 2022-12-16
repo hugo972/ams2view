@@ -119,6 +119,14 @@ function getEvent(record) {
                 : "qualifying";
     }
 
+    const participantMap =
+        _.isArray(record.participants)
+            ? _(record.participants).
+                toPairs().
+                keyBy(([participantIndex]) => parseInt(participantIndex) + 1).
+                mapValues(([participantIndex, participant]) => participant).
+                value()
+            : record.participants;
     const stageNameToPlayerDataMap =
         _(record.stages).
             mapValues(
@@ -128,7 +136,7 @@ function getEvent(record) {
                             event =>
                                 event.event_name === "Lap" &&
                                 event.is_player).
-                        groupBy(event => record.participants[event.participantid].SteamID).
+                        groupBy(event => participantMap[event.participantid].SteamID).
                         mapValues(
                             events =>
                                 _.map(
@@ -144,7 +152,8 @@ function getEvent(record) {
                                                             ? attributeValue
                                                             : undefined).
                                                 filter().
-                                                value()
+                                                value(),
+                                        vehicleId: participantMap[event.participantid].VehicleId
                                     }))).
                         value()).
             pickBy(playerDataMap => !_.isEmpty(playerDataMap)).
