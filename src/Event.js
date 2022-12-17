@@ -35,7 +35,7 @@ export function Event({event}) {
 }
 
 function Stage({event, playerDataMap, stageName}) {
-    const [bestSectors, playerLapDatas] =
+    const [bestSectors, maxLaps, playerLapDatas] =
         useMemo(
             () => {
                 const playerLapDatas =
@@ -78,7 +78,12 @@ function Stage({event, playerDataMap, stageName}) {
                                     value(),
                             []);
 
-                return [bestSectors, playerLapDatas];
+                const maxLaps =
+                    _(playerLapDatas).
+                        map(playerLapData => playerLapData.laps).
+                        max();
+
+                return [bestSectors, maxLaps, playerLapDatas];
             },
             []);
 
@@ -92,6 +97,9 @@ function Stage({event, playerDataMap, stageName}) {
             <Table>
                 <TableHead>
                     <TableRow>
+                        <TableCell>
+                            #
+                        </TableCell>
                         <TableCell>
                             Name
                         </TableCell>
@@ -115,6 +123,15 @@ function Stage({event, playerDataMap, stageName}) {
                         (playerLapData, playerLapDataIndex) =>
                             <TableRow key={playerLapData.name}>
                                 <TableCell>
+                                    <Typography
+                                        style={{
+                                            fontSize: "0.8rem",
+                                            fontWeight: 500
+                                        }}>
+                                        {playerLapDataIndex + 1}
+                                    </Typography>
+                                </TableCell>
+                                <TableCell>
                                     <Typography>
                                         {playerLapData.name}
                                     </Typography>
@@ -123,9 +140,21 @@ function Stage({event, playerDataMap, stageName}) {
                                     </Typography>
                                 </TableCell>
                                 <TableCell>
-                                    <Typography>
-                                        {playerLapData.laps}
-                                    </Typography>
+                                    <Stack
+                                        alignItems="center"
+                                        direction="row"
+                                        spacing={1}>
+                                        <Typography>
+                                            {playerLapData.laps}
+                                        </Typography>
+                                        {playerLapData.laps === maxLaps &&
+                                            <img
+                                                src="/digger.png"
+                                                style={{
+                                                    height: 24,
+                                                    width: 24
+                                                }}/>}
+                                    </Stack>
                                 </TableCell>
                                 <TableCell>
                                     <Stack
