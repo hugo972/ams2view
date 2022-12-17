@@ -34,7 +34,7 @@ export function App() {
                         record => record.start_time);
                 for (const record of records) {
                     const event = getEvent(record);
-                    if (_.isEmpty(event.stageNameToPlayerDataMap)) {
+                    if (_.isEmpty(event?.stageNameToPlayerDataMap)) {
                         continue;
                     }
 
@@ -112,13 +112,15 @@ function getEvent(record) {
     if (_.size(record.stages) === 1 &&
         _.has(record.stages, "practice1")) {
         eventType = "practice";
-    } else {
+    } else if (record.finished) {
         eventType =
             _.has(record.stages, "race1")
                 ? "race"
                 : "qualifying";
+    } else {
+        return undefined;
     }
-
+    
     const participantMap =
         _.isArray(record.participants)
             ? _(record.participants).
