@@ -4,10 +4,9 @@ const request = require("request");
 
 const serverPort = process.env.PORT || 3000;
 const statsFilePath = "http://automobilista.ddns.net:8081/";
+const utilsFilePath = "http://automobilista.ddns.net:8081/utils.json";
 const clientBuiltPath = path.join(__dirname, "../build");
 const app = express();
-
-app.use(express.static(clientBuiltPath));
 
 app.get(
     "/",
@@ -31,6 +30,21 @@ app.get(
             });
     });
 
+app.get(
+    "/utils.json",
+    (req, res) => {
+        request.get(
+            utilsFilePath,
+            (err, fileRes, utilsFileData) => {
+                if (!err) {
+                    res.contentType("application/json");
+                    res.send(utilsFileData);
+                }
+            });
+    });
+
+app.use(express.static(clientBuiltPath));
+
 console.log(
     "AMS2 Simrace Server\n\n",
     `port: ${serverPort}\n`,
@@ -38,6 +52,7 @@ console.log(
     {
         "(default)": `${clientBuiltPath}/index.html`,
         "/stats": statsFilePath,
+        "/utils": utilsFilePath,
         "/*": `${clientBuiltPath}/*`
     });
 

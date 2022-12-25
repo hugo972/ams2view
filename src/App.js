@@ -4,7 +4,7 @@ import _ from "lodash";
 import {Fragment, useMemo, useState} from "react";
 import {createFetchStore} from "react-suspense-fetch";
 import {Date} from "./Date";
-import {getTrackName} from "./utils";
+import {getTrackName, loadUtilData} from "./utils";
 import {Event} from "./Event";
 import {EventPlayersChip, EventTypeChip} from "./EventChips";
 
@@ -22,8 +22,8 @@ const store =
 store.prefetch();
 
 export function App() {
+    loadUtilData();
     const result = store.get();
-
     const events =
         useMemo(
             () => {
