@@ -38,10 +38,16 @@ export function App() {
                         continue;
                     }
 
-                    const currentEvent = _.last(events);
-                    if (event.type === "practice" &&
-                        currentEvent?.trackId === event.trackId &&
-                        currentEvent?.type === "practice") {
+                    const currentEvent = 
+                        _.find(
+                            events,
+                            currentEvent =>
+                                event.type === "practice" &&
+                                currentEvent?.trackId === event.trackId &&
+                                currentEvent?.type === "practice");
+                    if (currentEvent == undefined) {
+                        events.push(event);
+                    } else {
                         currentEvent.endTime = event.endTime;
                         currentEvent.events++;
                         currentEvent.stageNameToPlayerDataMap =
@@ -57,14 +63,12 @@ export function App() {
                                                 concat(otherPlayerData).
                                                 filter().
                                                 value()));
-                    } else {
-                        events.push(event);
                     }
                 }
 
                 return _.orderBy(
                     events,
-                    event => event.startTime,
+                    event => event.endTime,
                     "desc");
             },
             [result]);
@@ -160,9 +164,19 @@ function getEvent(record) {
                         value()).
             pickBy(playerDataMap => !_.isEmpty(playerDataMap)).
             value();
-
+    
+    function getRaceResults() {
+        if (eventType !== "race") {
+            return undefined;
+        }
+        
+        return {
+            stageNameToPlayerIdToPositionMap: {}
+        };
+    }
+    
     return {
-        endTime: record.end_time,
+        endTime: record.end_time ?? record.start_time,
         events: 1,
         stageNameToPlayerDataMap,
         startTime: record.start_time,
