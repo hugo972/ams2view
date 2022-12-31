@@ -176,7 +176,7 @@ function getEvent(record) {
     }
     
     return {
-        endTime: record.end_time ?? record.start_time,
+        endTime: record.end_time || record.start_time,
         events: 1,
         stageNameToPlayerDataMap,
         startTime: record.start_time,

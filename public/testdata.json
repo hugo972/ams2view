@@ -1,5 +1,5 @@
 {
-  "next_history_index" : 93,
+  "next_history_index" : 97,
   "stats" : {
     "history" : [
       {
@@ -98305,8 +98305,1977 @@
           }
         },
         "start_time" : 1672174594
+      },
+      {
+        "end_time" : 1672481431,
+        "finished" : false,
+        "index" : 93,
+        "members" : {
+          "38849" : {
+            "index" : 1,
+            "join_time" : 1672481013,
+            "leave_time" : 1672481177,
+            "name" : "Yariv G",
+            "participantid" : 1,
+            "setup" : {
+              "LiveryId" : 54,
+              "RaceStatFlags" : 1073747204,
+              "VehicleId" : 1785300635
+            },
+            "steamid" : "76561198840080513"
+          }
+        },
+        "participants" : {
+          "0" : {
+            "IsPlayer" : 1,
+            "LiveryId" : 59,
+            "Name" : "barakc972",
+            "RefId" : 6336,
+            "SteamID" : "76561199262975610",
+            "VehicleId" : 1785300635
+          },
+          "1" : {
+            "IsPlayer" : 1,
+            "LiveryId" : 54,
+            "Name" : "",
+            "RefId" : 38849,
+            "SteamID" : "76561198840080513",
+            "VehicleId" : 1785300635
+          }
+        },
+        "setup" : {
+          "AllowedCutsBeforePenalty" : 3,
+          "AllowedViews" : 2,
+          "DamageRandomFailures" : 0,
+          "DamageScale" : 1,
+          "DamageType" : 1,
+          "DisablePitstopRefuelling" : 0,
+          "DriveThroughPenalty" : 1,
+          "Flags" : 252445552,
+          "FuelUsageType" : 0,
+          "FullCourseYellows" : 0,
+          "GridLayout" : 0,
+          "GridSize" : 14,
+          "ManualPitStops" : 1,
+          "ManualRollingStarts" : 1,
+          "MaxPlayers" : 14,
+          "MinimumOnlineRank" : 0,
+          "MinimumOnlineStrength" : 100,
+          "MultiClassSlot1" : -1,
+          "MultiClassSlot2" : -1,
+          "MultiClassSlot3" : -1,
+          "MultiClassSlot4" : -1,
+          "MultiClassSlot5" : -1,
+          "MultiClassSlot6" : -1,
+          "MultiClassSlot7" : -1,
+          "MultiClassSlot8" : -1,
+          "MultiClassSlot9" : -1,
+          "MultiClassSlots" : 0,
+          "OpponentDifficulty" : 80,
+          "PenaltiesType" : 1,
+          "PitWhiteLinePenalty" : 1,
+          "PracticeDateHour" : 14,
+          "PracticeDateProgression" : 1,
+          "PracticeLength" : 120,
+          "PracticeLiveTrackPreset" : 0,
+          "PracticeWeatherProgression" : 1,
+          "PracticeWeatherSlot1" : 296956818,
+          "PracticeWeatherSlot2" : -934211870,
+          "PracticeWeatherSlot3" : -934211870,
+          "PracticeWeatherSlot4" : -934211870,
+          "PracticeWeatherSlots" : 0,
+          "QualifyDateHour" : 14,
+          "QualifyDateProgression" : 1,
+          "QualifyLength" : 0,
+          "QualifyLiveTrackPreset" : 0,
+          "QualifyWeatherProgression" : 1,
+          "QualifyWeatherSlot1" : 296956818,
+          "QualifyWeatherSlot2" : -934211870,
+          "QualifyWeatherSlot3" : 296956818,
+          "QualifyWeatherSlot4" : -934211870,
+          "QualifyWeatherSlots" : 0,
+          "RaceDateDay" : 15,
+          "RaceDateHour" : 14,
+          "RaceDateMonth" : 8,
+          "RaceDateProgression" : 1,
+          "RaceDateYear" : 2022,
+          "RaceExtraLap" : 0,
+          "RaceFormationLap" : 0,
+          "RaceLength" : 0,
+          "RaceLiveTrackPreset" : 0,
+          "RaceMandatoryPitStops" : 0,
+          "RaceRollingStart" : 0,
+          "RaceWeatherProgression" : 1,
+          "RaceWeatherSlot1" : 296956818,
+          "RaceWeatherSlot2" : -934211870,
+          "RaceWeatherSlot3" : 296956818,
+          "RaceWeatherSlot4" : -934211870,
+          "RaceWeatherSlots" : 0,
+          "ServerControlsSetup" : 0,
+          "ServerControlsTrack" : 0,
+          "ServerControlsVehicle" : 0,
+          "ServerControlsVehicleClass" : 0,
+          "TireWearType" : 6,
+          "TrackId" : 1820168870,
+          "VehicleClassId" : -1338470134,
+          "VehicleModelId" : 1785300635
+        },
+        "stages" : {
+          "practice1" : {
+            "end_time" : 1672481431,
+            "events" : [
+              {
+                "attributes" : {
+                  "NewState" : "Racing",
+                  "PreviousState" : "InGarage"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "barakc972",
+                "participantid" : 0,
+                "refid" : 6336,
+                "time" : 1672479836
+              },
+              {
+                "attributes" : {
+                  "IsMainBranch" : 1,
+                  "Lap" : 0,
+                  "LapTime" : 70489,
+                  "RacePosition" : 1
+                },
+                "event_name" : "CutTrackStart",
+                "is_player" : true,
+                "name" : "barakc972",
+                "participantid" : 0,
+                "refid" : 6336,
+                "time" : 1672479909
+              },
+              {
+                "attributes" : {
+                  "ElapsedTime" : 23231,
+                  "PenaltyThreshold" : 0,
+                  "PenaltyValue" : 0,
+                  "PlaceGain" : 0,
+                  "SkippedTime" : 5989
+                },
+                "event_name" : "CutTrackEnd",
+                "is_player" : true,
+                "name" : "barakc972",
+                "participantid" : 0,
+                "refid" : 6336,
+                "time" : 1672479930
+              },
+              {
+                "attributes" : {
+                  "IsMainBranch" : 1,
+                  "Lap" : 0,
+                  "LapTime" : 8643,
+                  "RacePosition" : 1
+                },
+                "event_name" : "CutTrackStart",
+                "is_player" : true,
+                "name" : "barakc972",
+                "participantid" : 0,
+                "refid" : 6336,
+                "time" : 1672479962
+              },
+              {
+                "attributes" : {
+                  "ElapsedTime" : 1553,
+                  "PenaltyThreshold" : 0,
+                  "PenaltyValue" : 0,
+                  "PlaceGain" : 0,
+                  "SkippedTime" : 1503
+                },
+                "event_name" : "CutTrackEnd",
+                "is_player" : true,
+                "name" : "barakc972",
+                "participantid" : 0,
+                "refid" : 6336,
+                "time" : 1672479963
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 7121,
+                  "Lap" : 0,
+                  "LapTime" : 98791,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28855,
+                  "Sector2Time" : 36057,
+                  "Sector3Time" : 33879
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "barakc972",
+                "participantid" : 0,
+                "refid" : 6336,
+                "time" : 1672480052
+              },
+              {
+                "attributes" : {
+                  "IsMainBranch" : 1,
+                  "Lap" : 1,
+                  "LapTime" : 8632,
+                  "RacePosition" : 1
+                },
+                "event_name" : "CutTrackStart",
+                "is_player" : true,
+                "name" : "barakc972",
+                "participantid" : 0,
+                "refid" : 6336,
+                "time" : 1672480060
+              },
+              {
+                "attributes" : {
+                  "ElapsedTime" : 1551,
+                  "PenaltyThreshold" : 0,
+                  "PenaltyValue" : 0,
+                  "PlaceGain" : 0,
+                  "SkippedTime" : 1518
+                },
+                "event_name" : "CutTrackEnd",
+                "is_player" : true,
+                "name" : "barakc972",
+                "participantid" : 0,
+                "refid" : 6336,
+                "time" : 1672480062
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 3549,
+                  "Lap" : 1,
+                  "LapTime" : 96702,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28180,
+                  "Sector2Time" : 35110,
+                  "Sector3Time" : 33412
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "barakc972",
+                "participantid" : 0,
+                "refid" : 6336,
+                "time" : 1672480149
+              },
+              {
+                "attributes" : {
+                  "IsMainBranch" : 1,
+                  "Lap" : 2,
+                  "LapTime" : 8630,
+                  "RacePosition" : 1
+                },
+                "event_name" : "CutTrackStart",
+                "is_player" : true,
+                "name" : "barakc972",
+                "participantid" : 0,
+                "refid" : 6336,
+                "time" : 1672480157
+              },
+              {
+                "attributes" : {
+                  "ElapsedTime" : 1565,
+                  "PenaltyThreshold" : 0,
+                  "PenaltyValue" : 1000,
+                  "PlaceGain" : 0,
+                  "SkippedTime" : 1579
+                },
+                "event_name" : "CutTrackEnd",
+                "is_player" : true,
+                "name" : "barakc972",
+                "participantid" : 0,
+                "refid" : 6336,
+                "time" : 1672480159
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 0,
+                  "DistanceTravelled" : 3556,
+                  "Lap" : 2,
+                  "LapTime" : 98958,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 29734,
+                  "Sector2Time" : 35688,
+                  "Sector3Time" : 33535
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "barakc972",
+                "participantid" : 0,
+                "refid" : 6336,
+                "time" : 1672480247
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 3548,
+                  "Lap" : 3,
+                  "LapTime" : 97000,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28313,
+                  "Sector2Time" : 35416,
+                  "Sector3Time" : 33271
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "barakc972",
+                "participantid" : 0,
+                "refid" : 6336,
+                "time" : 1672480344
+              },
+              {
+                "attributes" : {
+                  "IsMainBranch" : 1,
+                  "Lap" : 4,
+                  "LapTime" : 76689,
+                  "RacePosition" : 1
+                },
+                "event_name" : "CutTrackStart",
+                "is_player" : true,
+                "name" : "barakc972",
+                "participantid" : 0,
+                "refid" : 6336,
+                "time" : 1672480422
+              },
+              {
+                "attributes" : {
+                  "ElapsedTime" : 2250,
+                  "PenaltyThreshold" : 0,
+                  "PenaltyValue" : 1000,
+                  "PlaceGain" : 0,
+                  "SkippedTime" : 2447
+                },
+                "event_name" : "CutTrackEnd",
+                "is_player" : true,
+                "name" : "barakc972",
+                "participantid" : 0,
+                "refid" : 6336,
+                "time" : 1672480424
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 0,
+                  "DistanceTravelled" : 3554,
+                  "Lap" : 4,
+                  "LapTime" : 97057,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28025,
+                  "Sector2Time" : 35392,
+                  "Sector3Time" : 33640
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "barakc972",
+                "participantid" : 0,
+                "refid" : 6336,
+                "time" : 1672480441
+              },
+              {
+                "attributes" : {
+                  "IsMainBranch" : 1,
+                  "Lap" : 5,
+                  "LapTime" : 31627,
+                  "RacePosition" : 1
+                },
+                "event_name" : "CutTrackStart",
+                "is_player" : true,
+                "name" : "barakc972",
+                "participantid" : 0,
+                "refid" : 6336,
+                "time" : 1672480472
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 426,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "barakc972",
+                "participantid" : 0,
+                "refid" : 6336,
+                "time" : 1672480474
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 394,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "barakc972",
+                "participantid" : 0,
+                "refid" : 6336,
+                "time" : 1672480474
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 319,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "barakc972",
+                "participantid" : 0,
+                "refid" : 6336,
+                "time" : 1672480474
+              },
+              {
+                "attributes" : {
+                  "NewState" : "InGarage",
+                  "PreviousState" : "Racing"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "barakc972",
+                "participantid" : 0,
+                "refid" : 6336,
+                "time" : 1672480482
+              },
+              {
+                "attributes" : {
+                  "NewState" : "Racing",
+                  "PreviousState" : "InGarage"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "barakc972",
+                "participantid" : 0,
+                "refid" : 6336,
+                "time" : 1672480497
+              },
+              {
+                "attributes" : {
+                  "IsMainBranch" : 1,
+                  "Lap" : 5,
+                  "LapTime" : 16339,
+                  "RacePosition" : 1
+                },
+                "event_name" : "CutTrackStart",
+                "is_player" : true,
+                "name" : "barakc972",
+                "participantid" : 0,
+                "refid" : 6336,
+                "time" : 1672480616
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 1000,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "barakc972",
+                "participantid" : 0,
+                "refid" : 6336,
+                "time" : 1672480623
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 1000,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "barakc972",
+                "participantid" : 0,
+                "refid" : 6336,
+                "time" : 1672480623
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 553,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "barakc972",
+                "participantid" : 0,
+                "refid" : 6336,
+                "time" : 1672480623
+              },
+              {
+                "attributes" : {
+                  "ElapsedTime" : 20321,
+                  "PenaltyThreshold" : 0,
+                  "PenaltyValue" : 0,
+                  "PlaceGain" : 0,
+                  "SkippedTime" : 11056
+                },
+                "event_name" : "CutTrackEnd",
+                "is_player" : true,
+                "name" : "barakc972",
+                "participantid" : 0,
+                "refid" : 6336,
+                "time" : 1672480631
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 8487,
+                  "Lap" : 5,
+                  "LapTime" : 115670,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 43488,
+                  "Sector2Time" : 36915,
+                  "Sector3Time" : 35267
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "barakc972",
+                "participantid" : 0,
+                "refid" : 6336,
+                "time" : 1672480710
+              },
+              {
+                "attributes" : {
+                  "IsMainBranch" : 1,
+                  "Lap" : 6,
+                  "LapTime" : 31585,
+                  "RacePosition" : 1
+                },
+                "event_name" : "CutTrackStart",
+                "is_player" : true,
+                "name" : "barakc972",
+                "participantid" : 0,
+                "refid" : 6336,
+                "time" : 1672480746
+              },
+              {
+                "attributes" : {
+                  "ElapsedTime" : 12355,
+                  "PenaltyThreshold" : 0,
+                  "PenaltyValue" : 0,
+                  "PlaceGain" : 0,
+                  "SkippedTime" : 3182
+                },
+                "event_name" : "CutTrackEnd",
+                "is_player" : true,
+                "name" : "barakc972",
+                "participantid" : 0,
+                "refid" : 6336,
+                "time" : 1672480754
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 3584,
+                  "Lap" : 6,
+                  "LapTime" : 114172,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28358,
+                  "Sector2Time" : 52542,
+                  "Sector3Time" : 33272
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "barakc972",
+                "participantid" : 0,
+                "refid" : 6336,
+                "time" : 1672480825
+              },
+              {
+                "attributes" : {
+                  "IsMainBranch" : 1,
+                  "Lap" : 7,
+                  "LapTime" : 84538,
+                  "RacePosition" : 1
+                },
+                "event_name" : "CutTrackStart",
+                "is_player" : true,
+                "name" : "barakc972",
+                "participantid" : 0,
+                "refid" : 6336,
+                "time" : 1672480916
+              },
+              {
+                "attributes" : {
+                  "ElapsedTime" : 12495,
+                  "PenaltyThreshold" : 0,
+                  "PenaltyValue" : 0,
+                  "PlaceGain" : 0,
+                  "SkippedTime" : 10296
+                },
+                "event_name" : "CutTrackEnd",
+                "is_player" : true,
+                "name" : "barakc972",
+                "participantid" : 0,
+                "refid" : 6336,
+                "time" : 1672480923
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 3555,
+                  "Lap" : 7,
+                  "LapTime" : 103044,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28620,
+                  "Sector2Time" : 35531,
+                  "Sector3Time" : 38893
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "barakc972",
+                "participantid" : 0,
+                "refid" : 6336,
+                "time" : 1672480928
+              },
+              {
+                "attributes" : {
+                  "NewState" : "InGarage",
+                  "PreviousState" : "Racing"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "barakc972",
+                "participantid" : 0,
+                "refid" : 6336,
+                "time" : 1672480933
+              },
+              {
+                "attributes" : {
+                  "NewState" : "Racing",
+                  "PreviousState" : "InGarage"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "barakc972",
+                "participantid" : 0,
+                "refid" : 6336,
+                "time" : 1672480950
+              },
+              {
+                "attributes" : {
+                  "NewState" : "InGarage",
+                  "PreviousState" : "Racing"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "",
+                "participantid" : 1,
+                "refid" : 38849,
+                "time" : 1672481039
+              },
+              {
+                "attributes" : {
+                  "NewState" : "Racing",
+                  "PreviousState" : "InGarage"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "",
+                "participantid" : 1,
+                "refid" : 38849,
+                "time" : 1672481077
+              },
+              {
+                "attributes" : {
+                  "IsMainBranch" : 1,
+                  "Lap" : 0,
+                  "LapTime" : 51459,
+                  "RacePosition" : 2
+                },
+                "event_name" : "CutTrackStart",
+                "is_player" : true,
+                "name" : "",
+                "participantid" : 1,
+                "refid" : 38849,
+                "time" : 1672481139
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 943,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "",
+                "participantid" : 1,
+                "refid" : 38849,
+                "time" : 1672481144
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 400,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "",
+                "participantid" : 1,
+                "refid" : 38849,
+                "time" : 1672481144
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 7299,
+                  "Lap" : 8,
+                  "LapTime" : 97982,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28512,
+                  "Sector2Time" : 35583,
+                  "Sector3Time" : 33887
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "barakc972",
+                "participantid" : 0,
+                "refid" : 6336,
+                "time" : 1672481145
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 3556,
+                  "Lap" : 9,
+                  "LapTime" : 97373,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28211,
+                  "Sector2Time" : 35644,
+                  "Sector3Time" : 33518
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "barakc972",
+                "participantid" : 0,
+                "refid" : 6336,
+                "time" : 1672481243
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 3542,
+                  "Lap" : 10,
+                  "LapTime" : 96464,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28200,
+                  "Sector2Time" : 35080,
+                  "Sector3Time" : 33184
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "barakc972",
+                "participantid" : 0,
+                "refid" : 6336,
+                "time" : 1672481339
+              },
+              {
+                "attributes" : {
+                  "IsMainBranch" : 1,
+                  "Lap" : 11,
+                  "LapTime" : 76415,
+                  "RacePosition" : 1
+                },
+                "event_name" : "CutTrackStart",
+                "is_player" : true,
+                "name" : "barakc972",
+                "participantid" : 0,
+                "refid" : 6336,
+                "time" : 1672481417
+              },
+              {
+                "attributes" : {
+                  "ElapsedTime" : 3593,
+                  "PenaltyThreshold" : 0,
+                  "PenaltyValue" : 0,
+                  "PlaceGain" : 0,
+                  "SkippedTime" : 0
+                },
+                "event_name" : "CutTrackEnd",
+                "is_player" : true,
+                "name" : "barakc972",
+                "participantid" : 0,
+                "refid" : 6336,
+                "time" : 1672481421
+              },
+              {
+                "attributes" : {
+                  "NewState" : "InGarage",
+                  "PreviousState" : "Racing"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "barakc972",
+                "participantid" : 0,
+                "refid" : 6336,
+                "time" : 1672481423
+              }
+            ],
+            "results" : {},
+            "start_time" : 1672479821
+          }
+        },
+        "start_time" : 1672479799
+      },
+      {
+        "end_time" : 1672485941,
+        "finished" : false,
+        "index" : 94,
+        "members" : {},
+        "participants" : {
+          "0" : {
+            "IsPlayer" : 1,
+            "LiveryId" : 59,
+            "Name" : "Yariv G",
+            "RefId" : 12800,
+            "SteamID" : "76561198840080513",
+            "VehicleId" : 1785300635
+          }
+        },
+        "setup" : {
+          "AllowedCutsBeforePenalty" : 3,
+          "AllowedViews" : 2,
+          "DamageRandomFailures" : 0,
+          "DamageScale" : 1,
+          "DamageType" : 1,
+          "DisablePitstopRefuelling" : 0,
+          "DriveThroughPenalty" : 1,
+          "Flags" : 252445552,
+          "FuelUsageType" : 0,
+          "FullCourseYellows" : 0,
+          "GridLayout" : 0,
+          "GridSize" : 14,
+          "ManualPitStops" : 1,
+          "ManualRollingStarts" : 1,
+          "MaxPlayers" : 14,
+          "MinimumOnlineRank" : 0,
+          "MinimumOnlineStrength" : 100,
+          "MultiClassSlot1" : -1,
+          "MultiClassSlot2" : -1,
+          "MultiClassSlot3" : -1,
+          "MultiClassSlot4" : -1,
+          "MultiClassSlot5" : -1,
+          "MultiClassSlot6" : -1,
+          "MultiClassSlot7" : -1,
+          "MultiClassSlot8" : -1,
+          "MultiClassSlot9" : -1,
+          "MultiClassSlots" : 0,
+          "OpponentDifficulty" : 80,
+          "PenaltiesType" : 1,
+          "PitWhiteLinePenalty" : 1,
+          "PracticeDateHour" : 14,
+          "PracticeDateProgression" : 1,
+          "PracticeLength" : 120,
+          "PracticeLiveTrackPreset" : 0,
+          "PracticeWeatherProgression" : 1,
+          "PracticeWeatherSlot1" : 296956818,
+          "PracticeWeatherSlot2" : -934211870,
+          "PracticeWeatherSlot3" : -934211870,
+          "PracticeWeatherSlot4" : -934211870,
+          "PracticeWeatherSlots" : 0,
+          "QualifyDateHour" : 14,
+          "QualifyDateProgression" : 1,
+          "QualifyLength" : 0,
+          "QualifyLiveTrackPreset" : 0,
+          "QualifyWeatherProgression" : 1,
+          "QualifyWeatherSlot1" : 296956818,
+          "QualifyWeatherSlot2" : -934211870,
+          "QualifyWeatherSlot3" : 296956818,
+          "QualifyWeatherSlot4" : -934211870,
+          "QualifyWeatherSlots" : 0,
+          "RaceDateDay" : 15,
+          "RaceDateHour" : 14,
+          "RaceDateMonth" : 8,
+          "RaceDateProgression" : 1,
+          "RaceDateYear" : 2022,
+          "RaceExtraLap" : 0,
+          "RaceFormationLap" : 0,
+          "RaceLength" : 0,
+          "RaceLiveTrackPreset" : 0,
+          "RaceMandatoryPitStops" : 0,
+          "RaceRollingStart" : 0,
+          "RaceWeatherProgression" : 1,
+          "RaceWeatherSlot1" : 296956818,
+          "RaceWeatherSlot2" : -934211870,
+          "RaceWeatherSlot3" : 296956818,
+          "RaceWeatherSlot4" : -934211870,
+          "RaceWeatherSlots" : 0,
+          "ServerControlsSetup" : 0,
+          "ServerControlsTrack" : 0,
+          "ServerControlsVehicle" : 0,
+          "ServerControlsVehicleClass" : 0,
+          "TireWearType" : 6,
+          "TrackId" : 1820168870,
+          "VehicleClassId" : -1338470134,
+          "VehicleModelId" : 1785300635
+        },
+        "stages" : {
+          "practice1" : {
+            "end_time" : 1672485941,
+            "events" : [
+              {
+                "attributes" : {
+                  "NewState" : "Racing",
+                  "PreviousState" : "InGarage"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "Yariv G",
+                "participantid" : 0,
+                "refid" : 12800,
+                "time" : 1672485447
+              },
+              {
+                "attributes" : {
+                  "IsMainBranch" : 1,
+                  "Lap" : 0,
+                  "LapTime" : 54963,
+                  "RacePosition" : 1
+                },
+                "event_name" : "CutTrackStart",
+                "is_player" : true,
+                "name" : "Yariv G",
+                "participantid" : 0,
+                "refid" : 12800,
+                "time" : 1672485504
+              },
+              {
+                "attributes" : {
+                  "ElapsedTime" : 6453,
+                  "PenaltyThreshold" : 0,
+                  "PenaltyValue" : 0,
+                  "PlaceGain" : 0,
+                  "SkippedTime" : 0
+                },
+                "event_name" : "CutTrackEnd",
+                "is_player" : true,
+                "name" : "Yariv G",
+                "participantid" : 0,
+                "refid" : 12800,
+                "time" : 1672485507
+              },
+              {
+                "attributes" : {
+                  "IsMainBranch" : 1,
+                  "Lap" : 0,
+                  "LapTime" : 23274,
+                  "RacePosition" : 1
+                },
+                "event_name" : "CutTrackStart",
+                "is_player" : true,
+                "name" : "Yariv G",
+                "participantid" : 0,
+                "refid" : 12800,
+                "time" : 1672485569
+              },
+              {
+                "attributes" : {
+                  "ElapsedTime" : 7175,
+                  "PenaltyThreshold" : 0,
+                  "PenaltyValue" : 0,
+                  "PlaceGain" : 0,
+                  "SkippedTime" : 3817
+                },
+                "event_name" : "CutTrackEnd",
+                "is_player" : true,
+                "name" : "Yariv G",
+                "participantid" : 0,
+                "refid" : 12800,
+                "time" : 1672485576
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 7069,
+                  "Lap" : 0,
+                  "LapTime" : 103474,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 33351,
+                  "Sector2Time" : 36477,
+                  "Sector3Time" : 33646
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "Yariv G",
+                "participantid" : 0,
+                "refid" : 12800,
+                "time" : 1672485648
+              },
+              {
+                "attributes" : {
+                  "IsMainBranch" : 1,
+                  "Lap" : 1,
+                  "LapTime" : 77027,
+                  "RacePosition" : 1
+                },
+                "event_name" : "CutTrackStart",
+                "is_player" : true,
+                "name" : "Yariv G",
+                "participantid" : 0,
+                "refid" : 12800,
+                "time" : 1672485727
+              },
+              {
+                "attributes" : {
+                  "ElapsedTime" : 3213,
+                  "PenaltyThreshold" : 0,
+                  "PenaltyValue" : 0,
+                  "PlaceGain" : 0,
+                  "SkippedTime" : 2945
+                },
+                "event_name" : "CutTrackEnd",
+                "is_player" : true,
+                "name" : "Yariv G",
+                "participantid" : 0,
+                "refid" : 12800,
+                "time" : 1672485730
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 3544,
+                  "Lap" : 1,
+                  "LapTime" : 99055,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28596,
+                  "Sector2Time" : 35949,
+                  "Sector3Time" : 34510
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "Yariv G",
+                "participantid" : 0,
+                "refid" : 12800,
+                "time" : 1672485747
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 3547,
+                  "Lap" : 2,
+                  "LapTime" : 99078,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28979,
+                  "Sector2Time" : 36439,
+                  "Sector3Time" : 33660
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "Yariv G",
+                "participantid" : 0,
+                "refid" : 12800,
+                "time" : 1672485847
+              },
+              {
+                "attributes" : {
+                  "IsMainBranch" : 1,
+                  "Lap" : 3,
+                  "LapTime" : 31614,
+                  "RacePosition" : 1
+                },
+                "event_name" : "CutTrackStart",
+                "is_player" : true,
+                "name" : "Yariv G",
+                "participantid" : 0,
+                "refid" : 12800,
+                "time" : 1672485882
+              },
+              {
+                "attributes" : {
+                  "ElapsedTime" : 6118,
+                  "PenaltyThreshold" : 0,
+                  "PenaltyValue" : 1000,
+                  "PlaceGain" : 0,
+                  "SkippedTime" : 6599
+                },
+                "event_name" : "CutTrackEnd",
+                "is_player" : true,
+                "name" : "Yariv G",
+                "participantid" : 0,
+                "refid" : 12800,
+                "time" : 1672485884
+              },
+              {
+                "attributes" : {
+                  "IsMainBranch" : 1,
+                  "Lap" : 3,
+                  "LapTime" : 49123,
+                  "RacePosition" : 1
+                },
+                "event_name" : "CutTrackStart",
+                "is_player" : true,
+                "name" : "Yariv G",
+                "participantid" : 0,
+                "refid" : 12800,
+                "time" : 1672485898
+              },
+              {
+                "attributes" : {
+                  "ElapsedTime" : 23742,
+                  "PenaltyThreshold" : 0,
+                  "PenaltyValue" : 0,
+                  "PlaceGain" : 0,
+                  "SkippedTime" : 0
+                },
+                "event_name" : "CutTrackEnd",
+                "is_player" : true,
+                "name" : "Yariv G",
+                "participantid" : 0,
+                "refid" : 12800,
+                "time" : 1672485920
+              },
+              {
+                "attributes" : {
+                  "IsMainBranch" : 1,
+                  "Lap" : 3,
+                  "LapTime" : 13600,
+                  "RacePosition" : 1
+                },
+                "event_name" : "CutTrackStart",
+                "is_player" : true,
+                "name" : "Yariv G",
+                "participantid" : 0,
+                "refid" : 12800,
+                "time" : 1672485929
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 1000,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "Yariv G",
+                "participantid" : 0,
+                "refid" : 12800,
+                "time" : 1672485930
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 746,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "Yariv G",
+                "participantid" : 0,
+                "refid" : 12800,
+                "time" : 1672485930
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 353,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "Yariv G",
+                "participantid" : 0,
+                "refid" : 12800,
+                "time" : 1672485930
+              }
+            ],
+            "results" : {},
+            "start_time" : 1672485403
+          }
+        },
+        "start_time" : 1672485380
+      },
+      {
+        "end_time" : 0,
+        "finished" : false,
+        "index" : 95,
+        "members" : {},
+        "participants" : {
+          "0" : {
+            "IsPlayer" : 1,
+            "LiveryId" : 66,
+            "Name" : "yoramw",
+            "RefId" : 25920,
+            "SteamID" : "76561198847610319",
+            "VehicleId" : 1785300635
+          }
+        },
+        "setup" : {
+          "AllowedCutsBeforePenalty" : 3,
+          "AllowedViews" : 2,
+          "DamageRandomFailures" : 0,
+          "DamageScale" : 1,
+          "DamageType" : 1,
+          "DisablePitstopRefuelling" : 0,
+          "DriveThroughPenalty" : 1,
+          "Flags" : 252445552,
+          "FuelUsageType" : 0,
+          "FullCourseYellows" : 0,
+          "GridLayout" : 0,
+          "GridSize" : 14,
+          "ManualPitStops" : 1,
+          "ManualRollingStarts" : 1,
+          "MaxPlayers" : 14,
+          "MinimumOnlineRank" : 0,
+          "MinimumOnlineStrength" : 100,
+          "MultiClassSlot1" : -1,
+          "MultiClassSlot2" : -1,
+          "MultiClassSlot3" : -1,
+          "MultiClassSlot4" : -1,
+          "MultiClassSlot5" : -1,
+          "MultiClassSlot6" : -1,
+          "MultiClassSlot7" : -1,
+          "MultiClassSlot8" : -1,
+          "MultiClassSlot9" : -1,
+          "MultiClassSlots" : 0,
+          "OpponentDifficulty" : 80,
+          "PenaltiesType" : 1,
+          "PitWhiteLinePenalty" : 1,
+          "PracticeDateHour" : 14,
+          "PracticeDateProgression" : 1,
+          "PracticeLength" : 120,
+          "PracticeLiveTrackPreset" : 0,
+          "PracticeWeatherProgression" : 1,
+          "PracticeWeatherSlot1" : 296956818,
+          "PracticeWeatherSlot2" : -934211870,
+          "PracticeWeatherSlot3" : -934211870,
+          "PracticeWeatherSlot4" : -934211870,
+          "PracticeWeatherSlots" : 0,
+          "QualifyDateHour" : 14,
+          "QualifyDateProgression" : 1,
+          "QualifyLength" : 0,
+          "QualifyLiveTrackPreset" : 0,
+          "QualifyWeatherProgression" : 1,
+          "QualifyWeatherSlot1" : 296956818,
+          "QualifyWeatherSlot2" : -934211870,
+          "QualifyWeatherSlot3" : 296956818,
+          "QualifyWeatherSlot4" : -934211870,
+          "QualifyWeatherSlots" : 0,
+          "RaceDateDay" : 15,
+          "RaceDateHour" : 14,
+          "RaceDateMonth" : 8,
+          "RaceDateProgression" : 1,
+          "RaceDateYear" : 2022,
+          "RaceExtraLap" : 0,
+          "RaceFormationLap" : 0,
+          "RaceLength" : 0,
+          "RaceLiveTrackPreset" : 0,
+          "RaceMandatoryPitStops" : 0,
+          "RaceRollingStart" : 0,
+          "RaceWeatherProgression" : 1,
+          "RaceWeatherSlot1" : 296956818,
+          "RaceWeatherSlot2" : -934211870,
+          "RaceWeatherSlot3" : 296956818,
+          "RaceWeatherSlot4" : -934211870,
+          "RaceWeatherSlots" : 0,
+          "ServerControlsSetup" : 0,
+          "ServerControlsTrack" : 0,
+          "ServerControlsVehicle" : 0,
+          "ServerControlsVehicleClass" : 0,
+          "TireWearType" : 6,
+          "TrackId" : 1820168870,
+          "VehicleClassId" : -1338470134,
+          "VehicleModelId" : 1785300635
+        },
+        "stages" : {
+          "practice1" : {
+            "end_time" : 0,
+            "events" : [
+              {
+                "attributes" : {
+                  "NewState" : "Racing",
+                  "PreviousState" : "InGarage"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "yoramw",
+                "participantid" : 0,
+                "refid" : 25920,
+                "time" : 1672496519
+              },
+              {
+                "attributes" : {
+                  "IsMainBranch" : 1,
+                  "Lap" : 0,
+                  "LapTime" : 4232,
+                  "RacePosition" : 1
+                },
+                "event_name" : "CutTrackStart",
+                "is_player" : true,
+                "name" : "yoramw",
+                "participantid" : 0,
+                "refid" : 25920,
+                "time" : 1672496523
+              },
+              {
+                "attributes" : {
+                  "ElapsedTime" : 6395,
+                  "PenaltyThreshold" : 0,
+                  "PenaltyValue" : 0,
+                  "PlaceGain" : 0,
+                  "SkippedTime" : 6246
+                },
+                "event_name" : "CutTrackEnd",
+                "is_player" : true,
+                "name" : "yoramw",
+                "participantid" : 0,
+                "refid" : 25920,
+                "time" : 1672496525
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 7070,
+                  "Lap" : 0,
+                  "LapTime" : 97802,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28641,
+                  "Sector2Time" : 35404,
+                  "Sector3Time" : 33756
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "yoramw",
+                "participantid" : 0,
+                "refid" : 25920,
+                "time" : 1672496722
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 3550,
+                  "Lap" : 1,
+                  "LapTime" : 98095,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28389,
+                  "Sector2Time" : 35939,
+                  "Sector3Time" : 33767
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "yoramw",
+                "participantid" : 0,
+                "refid" : 25920,
+                "time" : 1672496820
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 824,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "yoramw",
+                "participantid" : 0,
+                "refid" : 25920,
+                "time" : 1672496906
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 3546,
+                  "Lap" : 2,
+                  "LapTime" : 97465,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28666,
+                  "Sector2Time" : 35225,
+                  "Sector3Time" : 33575
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "yoramw",
+                "participantid" : 0,
+                "refid" : 25920,
+                "time" : 1672496918
+              },
+              {
+                "attributes" : {
+                  "IsMainBranch" : 1,
+                  "Lap" : 3,
+                  "LapTime" : 4187,
+                  "RacePosition" : 1
+                },
+                "event_name" : "CutTrackStart",
+                "is_player" : true,
+                "name" : "yoramw",
+                "participantid" : 0,
+                "refid" : 25920,
+                "time" : 1672496926
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 1000,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "yoramw",
+                "participantid" : 0,
+                "refid" : 25920,
+                "time" : 1672496930
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 537,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "yoramw",
+                "participantid" : 0,
+                "refid" : 25920,
+                "time" : 1672496930
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 1000,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "yoramw",
+                "participantid" : 0,
+                "refid" : 25920,
+                "time" : 1672496930
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 401,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "yoramw",
+                "participantid" : 0,
+                "refid" : 25920,
+                "time" : 1672496930
+              },
+              {
+                "attributes" : {
+                  "NewState" : "InGarage",
+                  "PreviousState" : "Racing"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "yoramw",
+                "participantid" : 0,
+                "refid" : 25920,
+                "time" : 1672496941
+              },
+              {
+                "attributes" : {
+                  "NewState" : "Racing",
+                  "PreviousState" : "InGarage"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "yoramw",
+                "participantid" : 0,
+                "refid" : 25920,
+                "time" : 1672496973
+              }
+            ],
+            "results" : {},
+            "start_time" : 1672496410
+          }
+        },
+        "start_time" : 1672496385
+      },
+      {
+        "end_time" : 0,
+        "finished" : false,
+        "index" : 96,
+        "members" : {},
+        "participants" : [
+          {
+            "IsPlayer" : 1,
+            "LiveryId" : 60,
+            "Name" : "yoramw",
+            "RefId" : 11136,
+            "SteamID" : "76561198847610319",
+            "VehicleId" : 1785300635
+          }
+        ],
+        "setup" : {
+          "AllowedCutsBeforePenalty" : 3,
+          "AllowedViews" : 2,
+          "DamageRandomFailures" : 0,
+          "DamageScale" : 1,
+          "DamageType" : 1,
+          "DisablePitstopRefuelling" : 0,
+          "DriveThroughPenalty" : 1,
+          "Flags" : 252445554,
+          "FuelUsageType" : 0,
+          "FullCourseYellows" : 0,
+          "GridLayout" : 0,
+          "GridSize" : 14,
+          "ManualPitStops" : 1,
+          "ManualRollingStarts" : 1,
+          "MaxPlayers" : 14,
+          "MinimumOnlineRank" : 0,
+          "MinimumOnlineStrength" : 100,
+          "MultiClassSlot1" : -1,
+          "MultiClassSlot2" : -1,
+          "MultiClassSlot3" : -1,
+          "MultiClassSlot4" : -1,
+          "MultiClassSlot5" : -1,
+          "MultiClassSlot6" : -1,
+          "MultiClassSlot7" : -1,
+          "MultiClassSlot8" : -1,
+          "MultiClassSlot9" : -1,
+          "MultiClassSlots" : 0,
+          "OpponentDifficulty" : 80,
+          "PenaltiesType" : 1,
+          "PitWhiteLinePenalty" : 1,
+          "PracticeDateHour" : 14,
+          "PracticeDateProgression" : 1,
+          "PracticeLength" : 120,
+          "PracticeLiveTrackPreset" : 0,
+          "PracticeWeatherProgression" : 1,
+          "PracticeWeatherSlot1" : 296956818,
+          "PracticeWeatherSlot2" : -934211870,
+          "PracticeWeatherSlot3" : -934211870,
+          "PracticeWeatherSlot4" : -934211870,
+          "PracticeWeatherSlots" : 0,
+          "QualifyDateHour" : 14,
+          "QualifyDateProgression" : 1,
+          "QualifyLength" : 0,
+          "QualifyLiveTrackPreset" : 0,
+          "QualifyWeatherProgression" : 1,
+          "QualifyWeatherSlot1" : 296956818,
+          "QualifyWeatherSlot2" : -934211870,
+          "QualifyWeatherSlot3" : 296956818,
+          "QualifyWeatherSlot4" : -934211870,
+          "QualifyWeatherSlots" : 0,
+          "RaceDateDay" : 15,
+          "RaceDateHour" : 14,
+          "RaceDateMonth" : 8,
+          "RaceDateProgression" : 1,
+          "RaceDateYear" : 2022,
+          "RaceExtraLap" : 0,
+          "RaceFormationLap" : 0,
+          "RaceLength" : 0,
+          "RaceLiveTrackPreset" : 0,
+          "RaceMandatoryPitStops" : 0,
+          "RaceRollingStart" : 0,
+          "RaceWeatherProgression" : 1,
+          "RaceWeatherSlot1" : 296956818,
+          "RaceWeatherSlot2" : -934211870,
+          "RaceWeatherSlot3" : 296956818,
+          "RaceWeatherSlot4" : -934211870,
+          "RaceWeatherSlots" : 0,
+          "ServerControlsSetup" : 0,
+          "ServerControlsTrack" : 0,
+          "ServerControlsVehicle" : 0,
+          "ServerControlsVehicleClass" : 0,
+          "TireWearType" : 6,
+          "TrackId" : 1820168870,
+          "VehicleClassId" : -1338470134,
+          "VehicleModelId" : 1785300635
+        },
+        "stages" : {
+          "practice1" : {
+            "end_time" : 0,
+            "events" : [
+              {
+                "attributes" : {
+                  "NewState" : "Racing",
+                  "PreviousState" : "InGarage"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "yoramw",
+                "participantid" : 1,
+                "refid" : 11136,
+                "time" : 1672497604
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 7072,
+                  "Lap" : 0,
+                  "LapTime" : 97501,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28988,
+                  "Sector2Time" : 35208,
+                  "Sector3Time" : 33305
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "yoramw",
+                "participantid" : 1,
+                "refid" : 11136,
+                "time" : 1672497798
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 1,
+                  "DistanceTravelled" : 3552,
+                  "Lap" : 1,
+                  "LapTime" : 97204,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 28345,
+                  "Sector2Time" : 35219,
+                  "Sector3Time" : 33640
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "yoramw",
+                "participantid" : 1,
+                "refid" : 11136,
+                "time" : 1672497896
+              },
+              {
+                "attributes" : {
+                  "IsMainBranch" : 1,
+                  "Lap" : 2,
+                  "LapTime" : 23571,
+                  "RacePosition" : 1
+                },
+                "event_name" : "CutTrackStart",
+                "is_player" : true,
+                "name" : "yoramw",
+                "participantid" : 1,
+                "refid" : 11136,
+                "time" : 1672497920
+              },
+              {
+                "attributes" : {
+                  "ElapsedTime" : 10778,
+                  "PenaltyThreshold" : 0,
+                  "PenaltyValue" : 0,
+                  "PlaceGain" : 0,
+                  "SkippedTime" : 1349
+                },
+                "event_name" : "CutTrackEnd",
+                "is_player" : true,
+                "name" : "yoramw",
+                "participantid" : 1,
+                "refid" : 11136,
+                "time" : 1672497931
+              },
+              {
+                "attributes" : {
+                  "IsMainBranch" : 1,
+                  "Lap" : 2,
+                  "LapTime" : 31642,
+                  "RacePosition" : 1
+                },
+                "event_name" : "CutTrackStart",
+                "is_player" : true,
+                "name" : "yoramw",
+                "participantid" : 1,
+                "refid" : 11136,
+                "time" : 1672497943
+              },
+              {
+                "attributes" : {
+                  "ElapsedTime" : 8569,
+                  "PenaltyThreshold" : 0,
+                  "PenaltyValue" : 0,
+                  "PlaceGain" : 0,
+                  "SkippedTime" : 3930
+                },
+                "event_name" : "CutTrackEnd",
+                "is_player" : true,
+                "name" : "yoramw",
+                "participantid" : 1,
+                "refid" : 11136,
+                "time" : 1672497949
+              },
+              {
+                "attributes" : {
+                  "IsMainBranch" : 1,
+                  "Lap" : 2,
+                  "LapTime" : 54966,
+                  "RacePosition" : 1
+                },
+                "event_name" : "CutTrackStart",
+                "is_player" : true,
+                "name" : "yoramw",
+                "participantid" : 1,
+                "refid" : 11136,
+                "time" : 1672497972
+              },
+              {
+                "attributes" : {
+                  "ElapsedTime" : 3528,
+                  "PenaltyThreshold" : 0,
+                  "PenaltyValue" : 1000,
+                  "PlaceGain" : 0,
+                  "SkippedTime" : 3585
+                },
+                "event_name" : "CutTrackEnd",
+                "is_player" : true,
+                "name" : "yoramw",
+                "participantid" : 1,
+                "refid" : 11136,
+                "time" : 1672497974
+              },
+              {
+                "attributes" : {
+                  "IsMainBranch" : 1,
+                  "Lap" : 2,
+                  "LapTime" : 76260,
+                  "RacePosition" : 1
+                },
+                "event_name" : "CutTrackStart",
+                "is_player" : true,
+                "name" : "yoramw",
+                "participantid" : 1,
+                "refid" : 11136,
+                "time" : 1672497994
+              },
+              {
+                "attributes" : {
+                  "ElapsedTime" : 5032,
+                  "PenaltyThreshold" : 0,
+                  "PenaltyValue" : 0,
+                  "PlaceGain" : 0,
+                  "SkippedTime" : 4227
+                },
+                "event_name" : "CutTrackEnd",
+                "is_player" : true,
+                "name" : "yoramw",
+                "participantid" : 1,
+                "refid" : 11136,
+                "time" : 1672497999
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 0,
+                  "DistanceTravelled" : 3598,
+                  "Lap" : 2,
+                  "LapTime" : 120199,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 41362,
+                  "Sector2Time" : 42982,
+                  "Sector3Time" : 35855
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "yoramw",
+                "participantid" : 1,
+                "refid" : 11136,
+                "time" : 1672498016
+              },
+              {
+                "attributes" : {
+                  "IsMainBranch" : 1,
+                  "Lap" : 3,
+                  "LapTime" : 23320,
+                  "RacePosition" : 1
+                },
+                "event_name" : "CutTrackStart",
+                "is_player" : true,
+                "name" : "yoramw",
+                "participantid" : 1,
+                "refid" : 11136,
+                "time" : 1672498039
+              },
+              {
+                "attributes" : {
+                  "ElapsedTime" : 1848,
+                  "PenaltyThreshold" : 0,
+                  "PenaltyValue" : 0,
+                  "PlaceGain" : 0,
+                  "SkippedTime" : 1664
+                },
+                "event_name" : "CutTrackEnd",
+                "is_player" : true,
+                "name" : "yoramw",
+                "participantid" : 1,
+                "refid" : 11136,
+                "time" : 1672498041
+              },
+              {
+                "attributes" : {
+                  "IsMainBranch" : 1,
+                  "Lap" : 3,
+                  "LapTime" : 24965,
+                  "RacePosition" : 1
+                },
+                "event_name" : "CutTrackStart",
+                "is_player" : true,
+                "name" : "yoramw",
+                "participantid" : 1,
+                "refid" : 11136,
+                "time" : 1672498041
+              },
+              {
+                "attributes" : {
+                  "ElapsedTime" : 10537,
+                  "PenaltyThreshold" : 0,
+                  "PenaltyValue" : 0,
+                  "PlaceGain" : 0,
+                  "SkippedTime" : 0
+                },
+                "event_name" : "CutTrackEnd",
+                "is_player" : true,
+                "name" : "yoramw",
+                "participantid" : 1,
+                "refid" : 11136,
+                "time" : 1672498051
+              },
+              {
+                "attributes" : {
+                  "IsMainBranch" : 1,
+                  "Lap" : 3,
+                  "LapTime" : 57213,
+                  "RacePosition" : 1
+                },
+                "event_name" : "CutTrackStart",
+                "is_player" : true,
+                "name" : "yoramw",
+                "participantid" : 1,
+                "refid" : 11136,
+                "time" : 1672498091
+              },
+              {
+                "attributes" : {
+                  "ElapsedTime" : 5503,
+                  "PenaltyThreshold" : 0,
+                  "PenaltyValue" : 0,
+                  "PlaceGain" : 0,
+                  "SkippedTime" : 487
+                },
+                "event_name" : "CutTrackEnd",
+                "is_player" : true,
+                "name" : "yoramw",
+                "participantid" : 1,
+                "refid" : 11136,
+                "time" : 1672498096
+              },
+              {
+                "attributes" : {
+                  "IsMainBranch" : 1,
+                  "Lap" : 3,
+                  "LapTime" : 70488,
+                  "RacePosition" : 1
+                },
+                "event_name" : "CutTrackStart",
+                "is_player" : true,
+                "name" : "yoramw",
+                "participantid" : 1,
+                "refid" : 11136,
+                "time" : 1672498115
+              },
+              {
+                "attributes" : {
+                  "ElapsedTime" : 6063,
+                  "PenaltyThreshold" : 0,
+                  "PenaltyValue" : 1000,
+                  "PlaceGain" : 0,
+                  "SkippedTime" : 6813
+                },
+                "event_name" : "CutTrackEnd",
+                "is_player" : true,
+                "name" : "yoramw",
+                "participantid" : 1,
+                "refid" : 11136,
+                "time" : 1672498117
+              },
+              {
+                "attributes" : {
+                  "CountThisLapTimes" : 0,
+                  "DistanceTravelled" : 3590,
+                  "Lap" : 3,
+                  "LapTime" : 121739,
+                  "RacePosition" : 1,
+                  "Sector1Time" : 38994,
+                  "Sector2Time" : 48670,
+                  "Sector3Time" : 34074
+                },
+                "event_name" : "Lap",
+                "is_player" : true,
+                "name" : "yoramw",
+                "participantid" : 1,
+                "refid" : 11136,
+                "time" : 1672498138
+              },
+              {
+                "attributes" : {
+                  "IsMainBranch" : 1,
+                  "Lap" : 4,
+                  "LapTime" : 4405,
+                  "RacePosition" : 1
+                },
+                "event_name" : "CutTrackStart",
+                "is_player" : true,
+                "name" : "yoramw",
+                "participantid" : 1,
+                "refid" : 11136,
+                "time" : 1672498146
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 1000,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "yoramw",
+                "participantid" : 1,
+                "refid" : 11136,
+                "time" : 1672498149
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 996,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "yoramw",
+                "participantid" : 1,
+                "refid" : 11136,
+                "time" : 1672498150
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 309,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "yoramw",
+                "participantid" : 1,
+                "refid" : 11136,
+                "time" : 1672498150
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 356,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "yoramw",
+                "participantid" : 1,
+                "refid" : 11136,
+                "time" : 1672498150
+              },
+              {
+                "attributes" : {
+                  "CollisionMagnitude" : 310,
+                  "OtherParticipantId" : -1
+                },
+                "event_name" : "Impact",
+                "is_player" : true,
+                "name" : "yoramw",
+                "participantid" : 1,
+                "refid" : 11136,
+                "time" : 1672498150
+              },
+              {
+                "attributes" : {
+                  "NewState" : "InGarage",
+                  "PreviousState" : "Racing"
+                },
+                "event_name" : "State",
+                "is_player" : true,
+                "name" : "yoramw",
+                "participantid" : 1,
+                "refid" : 11136,
+                "time" : 1672498154
+              }
+            ],
+            "results" : {},
+            "start_time" : 1672497566
+          }
+        },
+        "start_time" : 1672497538
       }
-    ],
+   ],
     "players" : {
       "76561198085065530" : {
         "counts" : {
