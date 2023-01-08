@@ -24,47 +24,47 @@ export function Event({event}) {
                 <EventPlayersChip event={event}/>
             </Stack>
             {_.map(
-                event.stageNameToPlayerDataMap,
-                (playerDataMap, stageName) =>
+                event.stageNameToDataMap,
+                (stageData, stageName) =>
                     <Stage
-                        event={event}
                         key={stageName}
-                        playerDataMap={playerDataMap}
+                        stageData={stageData}
                         stageName={stageName}/>)}
         </Stack>);
 }
 
-function Stage({event, playerDataMap, stageName}) {
+function Stage({stageData, stageName}) {
     const [bestSectors, maxLaps, playerLapDatas] =
         useMemo(
             () => {
                 const playerLapDatas =
-                    _(playerDataMap).
+                    _(stageData.playerIdToLapDatasMap).
                         map(
-                            (playerDatas, playerId) => ({
+                            (playerLapDatas, playerId) => ({
                                 bestLap:
                                     _.minBy(
-                                        playerDatas,
-                                        playerData =>
-                                            playerData.lapTime),
-                                laps: _.size(playerDatas),
+                                        playerLapDatas,
+                                        playerLapData =>
+                                            playerLapData.lapTime),
+                                id: playerId,
+                                laps: _.size(playerLapDatas),
                                 name: getPlayerName(playerId),
                                 potentialLapSectors:
                                     _.reduce(
-                                        playerDatas,
-                                        (potential, playerData) =>
+                                        playerLapDatas,
+                                        (potential, playerLapData) =>
                                             _(potential).
-                                                zip(playerData.sectors).
+                                                zip(playerLapData.sectors).
                                                 map(_.min).
                                                 value(),
                                         []),
-                                vehicleId: playerDatas[0].vehicleId
+                                vehicleId: playerLapDatas[0].vehicleId
                             })).
                         orderBy(
-                            playerBestLap =>
-                                event.type === "race"
-                                    ? playerBestLap.position
-                                    : playerBestLap.bestLap.lapTime).
+                            playerLapData =>
+                                _.isEmpty(stageData.playerIdToPositionMap)
+                                    ? playerLapData.bestLap.lapTime
+                                    : stageData.playerIdToPositionMap[playerLapData.id]).
                         value();
 
                 const bestSectors =
@@ -87,6 +87,9 @@ function Stage({event, playerDataMap, stageName}) {
             },
             []);
 
+    if (stageName==="race1") {
+        console.log({stageData})
+    }
     return (
         <Stack
             spacing={1}

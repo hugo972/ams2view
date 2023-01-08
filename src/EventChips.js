@@ -15,12 +15,12 @@ export function EventTypeChip({event}) {
 }
 
 export function EventPlayersChip({event}) {
+    const firstStagePlayerIdToLapDatasMap =
+        _(event.stageNameToDataMap).
+            values().
+            first().playerIdToLapDatasMap;
     return (
         <Chip
-            label={
-                _.size(
-                    _(event.stageNameToPlayerDataMap).
-                        values().
-                        first()) + " Players"}
+            label={_.size(firstStagePlayerIdToLapDatasMap) + " Players"}
             size="small"/>);
 }

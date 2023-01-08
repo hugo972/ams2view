@@ -34,11 +34,11 @@ export function App() {
                         record => record.start_time);
                 for (const record of records) {
                     const event = getEvent(record);
-                    if (_.isEmpty(event?.stageNameToPlayerDataMap)) {
+                    if (_.isEmpty(event?.stageNameToDataMap)) {
                         continue;
                     }
 
-                    const currentEvent = 
+                    const currentEvent =
                         _.find(
                             events,
                             currentEvent =>
@@ -50,19 +50,21 @@ export function App() {
                     } else {
                         currentEvent.endTime = event.endTime;
                         currentEvent.events++;
-                        currentEvent.stageNameToPlayerDataMap =
+                        currentEvent.stageNameToDataMap =
                             _.mergeWith(
-                                currentEvent.stageNameToPlayerDataMap,
-                                event.stageNameToPlayerDataMap,
-                                (playerDataMap, otherPlayerDataMap) =>
-                                    _.mergeWith(
-                                        playerDataMap,
-                                        otherPlayerDataMap,
-                                        (playerData, otherPlayerData) =>
-                                            _(playerData).
-                                                concat(otherPlayerData).
-                                                filter().
-                                                value()));
+                                currentEvent.stageNameToDataMap,
+                                event.stageNameToDataMap,
+                                (stageData, otherStageData) => ({
+                                    playerIdToLapDatasMap:
+                                        _.mergeWith(
+                                            stageData.playerIdToLapDatasMap,
+                                            otherStageData.playerIdToLapDatasMap,
+                                            (lapDatas, otherLapDatas) =>
+                                                _(lapDatas).
+                                                    concat(otherLapDatas).
+                                                    filter().
+                                                    value())
+                                }));
                     }
                 }
 
@@ -116,15 +118,12 @@ function getEvent(record) {
     if (_.size(record.stages) === 1 &&
         _.has(record.stages, "practice1")) {
         eventType = "practice";
-    } else if (record.finished) {
-        eventType =
-            _.has(record.stages, "race1")
-                ? "race"
-                : "qualifying";
+    } else if (record.finished && _.has(record.stages, "race1")) {
+        eventType = "race";
     } else {
         return undefined;
     }
-    
+
     const participantMap =
         _.isArray(record.participants)
             ? _(record.participants).
@@ -133,52 +132,51 @@ function getEvent(record) {
                 mapValues(([participantIndex, participant]) => participant).
                 value()
             : record.participants;
-    const stageNameToPlayerDataMap =
+    const stageNameToDataMap =
         _(record.stages).
             mapValues(
-                stage =>
-                    _(stage.events).
-                        filter(
-                            event =>
-                                event.event_name === "Lap" &&
-                                event.is_player).
-                        groupBy(event => participantMap[event.participantid].SteamID).
-                        mapValues(
-                            events =>
-                                _.map(
-                                    events,
-                                    event => ({
-                                        lap: event.attributes.Lap,
-                                        lapTime: event.attributes.LapTime,
-                                        sectors:
-                                            _(event.attributes).
-                                                map(
-                                                    (attributeValue, attributeName) =>
-                                                        _.startsWith(attributeName, "Sector")
-                                                            ? attributeValue
-                                                            : undefined).
-                                                filter().
-                                                value(),
-                                        vehicleId: participantMap[event.participantid].VehicleId
-                                    }))).
-                        value()).
-            pickBy(playerDataMap => !_.isEmpty(playerDataMap)).
+                stage => ({
+                    playerIdToLapDatasMap:
+                        _(stage.events).
+                            filter(
+                                event =>
+                                    event.event_name === "Lap" &&
+                                    event.is_player).
+                            groupBy(event => participantMap[event.participantid].SteamID).
+                            mapValues(
+                                events =>
+                                    _(events).
+                                        map(
+                                            event => ({
+                                                lap: event.attributes.Lap,
+                                                lapTime: event.attributes.LapTime,
+                                                sectors:
+                                                    _(event.attributes).
+                                                        map(
+                                                            (attributeValue, attributeName) =>
+                                                                _.startsWith(attributeName, "Sector")
+                                                                    ? attributeValue
+                                                                    : undefined).
+                                                        filter().
+                                                        value(),
+                                                vehicleId: participantMap[event.participantid].VehicleId
+                                            })).
+                                        filter(event => event.sectors.length === 3).
+                                        value()).
+                            value(),
+                    playerIdToPositionMap:
+                        _(stage.results).
+                            keyBy(result => participantMap[result.participantid].SteamID).
+                            mapValues(result => result.attributes.RacePosition).
+                            value()
+                })).
+            pickBy(stageDataMap => !_.isEmpty(stageDataMap.playerIdToLapDatasMap)).
             value();
-    
-    function getRaceResults() {
-        if (eventType !== "race") {
-            return undefined;
-        }
-        
-        return {
-            stageNameToPlayerIdToPositionMap: {}
-        };
-    }
-    
+
     return {
         endTime: record.end_time || record.start_time,
         events: 1,
-        stageNameToPlayerDataMap,
+        stageNameToDataMap,
         startTime: record.start_time,
         trackId: record.setup.TrackId,
         type: eventType
