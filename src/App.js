@@ -159,6 +159,7 @@ function getEvent(record) {
                                                                     : undefined).
                                                         filter().
                                                         value(),
+                                                valid: event.attributes.CountThisLapTimes === 1,
                                                 vehicleId: participantMap[event.participantid].VehicleId
                                             })).
                                         filter(event => event.sectors.length === 3).

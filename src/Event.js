@@ -53,10 +53,9 @@ function Stage({stageData, stageName}) {
                         map(
                             ({lapDatas, playerId, vehicleId}) => ({
                                 bestLap:
-                                    _.minBy(
-                                        lapDatas,
-                                        playerLapData =>
-                                            playerLapData.lapTime),
+                                    _(lapDatas).
+                                        filter(lapData => lapData.valid).
+                                        minBy(lapData => lapData.lapTime),
                                 id: playerId,
                                 laps: _.size(lapDatas),
                                 name: getPlayerName(playerId),
@@ -74,12 +73,13 @@ function Stage({stageData, stageName}) {
                         orderBy(
                             playerLapData =>
                                 _.isEmpty(stageData.playerIdToPositionMap)
-                                    ? playerLapData.bestLap.lapTime
+                                    ? playerLapData.bestLap?.lapTime
                                     : stageData.playerIdToPositionMap[playerLapData.id]).
                         value();
 
                 const bestSectors =
                     _(playerLapDatas).
+                        filter(playerLapData => playerLapData.bestLap != undefined).
                         map(playerLapData => playerLapData.bestLap.sectors).
                         reduce(
                             (bestSectors, playerLapBestSectors) =>
@@ -92,7 +92,11 @@ function Stage({stageData, stageName}) {
                 const maxLapsPlayerId =
                     _(playerLapDatas).
                         groupBy(playerLapData => playerLapData.id).
-                        mapValues(playerLapDatas => _(playerLapDatas).map(playerLapData => playerLapData.laps).sum()).
+                        mapValues(
+                            playerLapDatas =>
+                                _(playerLapDatas).
+                                    map(playerLapData => playerLapData.laps).
+                                    sum()).
                         toPairs().
                         maxBy(([playerId, laps]) => laps)[0];
 
@@ -100,6 +104,7 @@ function Stage({stageData, stageName}) {
             },
             []);
 
+    console.log({playerLapDatas})
     return (
         <Stack
             spacing={1}
@@ -175,11 +180,14 @@ function Stage({stageData, stageName}) {
                                         direction="row"
                                         spacing={1}>
                                         <Typography>
-                                            {moment.
-                                                duration(playerLapData.bestLap.lapTime, "milliseconds").
-                                                format("m:ss.SSS")}
+                                            {playerLapData.bestLap == undefined
+                                                ? "-"
+                                                : moment.
+                                                    duration(playerLapData.bestLap.lapTime, "milliseconds").
+                                                    format("m:ss.SSS")}
                                         </Typography>
                                         {playerLapDataIndex > 0 &&
+                                            playerLapData.bestLap != undefined &&
                                             <Typography
                                                 style={{
                                                     color: "#c01717",
@@ -203,7 +211,7 @@ function Stage({stageData, stageName}) {
                                     </Typography>
                                 </TableCell>
                                 {_.map(
-                                    playerLapData.bestLap.sectors,
+                                    playerLapData.bestLap?.sectors ?? playerLapData.potentialLapSectors,
                                     (sector, sectorIndex) =>
                                         <TableCell
                                             key={sectorIndex}
@@ -215,9 +223,11 @@ function Stage({stageData, stageName}) {
                                                     }
                                                     : undefined}>
                                             <Typography>
-                                                {moment.
-                                                    duration(sector, "milliseconds").
-                                                    format("m:ss.SSS")}
+                                                {playerLapData.bestLap == undefined
+                                                    ? "-"
+                                                    : moment.
+                                                        duration(sector, "milliseconds").
+                                                        format("m:ss.SSS")}
                                             </Typography>
                                             <Typography style={{fontSize: "0.6rem"}}>
                                                 {moment.
