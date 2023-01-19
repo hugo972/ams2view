@@ -75,6 +75,7 @@ export function App() {
                     "desc");
             },
             [result]);
+    
     const [selectedEvent, setSelectedEvent] = useState();
     return (
         <Fragment>

@@ -1,21 +1,65 @@
-import {Table, TableBody, TableCell, TableHead, TableRow, Typography} from "@mui/material";
+import {IconButton, Table, TableBody, TableCell, TableHead, TableRow, Typography} from "@mui/material";
 import {Stack} from "@mui/system";
 import _ from "lodash";
 import moment from "moment";
-import {useMemo} from "react";
+import {useMemo, useRef} from "react";
 import {Date} from "./Date";
 import {getPlayerName, getStageName, getTrackName, getVehicleName} from "./utils";
 import {EventPlayersChip, EventTypeChip} from "./EventChips";
+import domToImage from "dom-to-image";
 
 export function Event({event}) {
+    const stackRef = useRef();
+
+    function exportImage() {
+        domToImage.
+            toPng(
+                stackRef.current,
+                {
+                    quality: 0.95
+                }).
+            then(
+                dataUrl => {
+                    const link = document.createElement("a");
+                    link.download = "session.png";
+                    link.href = dataUrl;
+                    link.click();
+                });
+    }
+
     return (
         <Stack
             alignItems="flex-start"
-            style={{padding: 20}}
+            ref={stackRef}
+            style={{
+                backgroundColor: "white",
+                padding: 20
+            }}
             spacing={1}>
-            <Typography style={{fontSize: "2rem"}}>
-                {getTrackName(event.trackId)}
-            </Typography>
+            <Stack
+                alignItems="center"
+                direction="row"
+                spacing={2}>
+                <Typography style={{fontSize: "2rem"}}>
+                    {getTrackName(event.trackId)}
+                </Typography>
+                <IconButton
+                    style={{
+                        height: 38,
+                        width: 38
+                    }}
+                    onClick={exportImage}>
+                    <svg focusable="false"
+                         aria-hidden="true"
+                         viewBox="0 0 24 24"
+                         data-testid="PhotoCameraIcon">
+                        <circle cx="12"
+                                cy="12"
+                                r="3.2"></circle>
+                        <path d="M9 2 7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2H9zm3 15c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"></path>
+                    </svg>
+                </IconButton>
+            </Stack>
             <Date temporal={event}/>
             <Stack
                 direction="row"
@@ -105,7 +149,6 @@ function Stage({stageData, stageName}) {
             },
             []);
 
-    console.log({playerLapDatas})
     return (
         <Stack
             spacing={1}
