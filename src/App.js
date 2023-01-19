@@ -115,9 +115,13 @@ export function App() {
 
 function getEvent(record) {
     let eventType;
-    if (_.size(record.stages) === 1 &&
-        _.has(record.stages, "practice1")) {
+    if (_.has(record.stages, "practice1") &&
+        (_.size(record.stages) === 1 ||
+        record.setup.RaceLength === 1)) {
         eventType = "practice";
+        record.stages = {
+            practice1: record.stages.practice1  
+        };
     } else if (record.finished && _.has(record.stages, "race1")) {
         eventType = "race";
     } else {

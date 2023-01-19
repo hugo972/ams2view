@@ -60,14 +60,15 @@ function Stage({stageData, stageName}) {
                                 laps: _.size(lapDatas),
                                 name: getPlayerName(playerId),
                                 potentialLapSectors:
-                                    _.reduce(
-                                        lapDatas,
-                                        (potential, playerLapData) =>
-                                            _(potential).
-                                                zip(playerLapData.sectors).
-                                                map(_.min).
-                                                value(),
-                                        []),
+                                    _(lapDatas).
+                                        filter(lapData => lapData.valid).
+                                        reduce(
+                                            (potential, playerLapData) =>
+                                                _(potential).
+                                                    zip(playerLapData.sectors).
+                                                    map(_.min).
+                                                    value(),
+                                            []),
                                 vehicleId
                             })).
                         orderBy(
