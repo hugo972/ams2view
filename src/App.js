@@ -7,6 +7,7 @@ import {Date} from "./Date";
 import {getTrackName, loadUtilData} from "./utils";
 import {Event} from "./Event";
 import {EventPlayersChip, EventTypeChip} from "./EventChips";
+import {Online} from "./Online";
 
 const store =
     createFetchStore(
@@ -74,10 +75,10 @@ export function App() {
                     "desc");
             },
             [result]);
-
     const [selectedEvent, setSelectedEvent] = useState();
     return (
         <Fragment>
+            <Online events={events}/>
             <List>
                 {_.map(
                     events,
@@ -117,10 +118,10 @@ function getEvent(record) {
     let eventType;
     if (_.has(record.stages, "practice1") &&
         (_.size(record.stages) === 1 ||
-        record.setup.RaceLength === 1)) {
+            record.setup.RaceLength === 1)) {
         eventType = "practice";
         record.stages = {
-            practice1: record.stages.practice1  
+            practice1: record.stages.practice1
         };
     } else if (record.finished && _.has(record.stages, "race1")) {
         eventType = "race";
@@ -163,6 +164,7 @@ function getEvent(record) {
                                                                     : undefined).
                                                         filter().
                                                         value(),
+                                                time: event.time,
                                                 valid: event.attributes.CountThisLapTimes === 1,
                                                 vehicleId: participantMap[event.participantid].VehicleId
                                             })).
