@@ -1,13 +1,10 @@
-import {Drawer, List, ListItemButton, Typography} from "@mui/material";
-import {Stack} from "@mui/system";
 import _ from "lodash";
-import {Fragment, useMemo, useState} from "react";
+import {useMemo} from "react";
 import {createFetchStore} from "react-suspense-fetch";
-import {Date} from "./Date";
-import {getTrackName, loadUtilData} from "./utils";
+import {loadUtilData} from "./utils";
 import {Event} from "./Event";
-import {EventPlayersChip, EventTypeChip} from "./EventChips";
-import {Online} from "./Online";
+import {useRoute} from "./useRoute";
+import {Events} from "./Events";
 
 const store =
     createFetchStore(
@@ -15,9 +12,13 @@ const store =
             const res =
                 window.location.hostname === "localhost"
                     ? await fetch("/testdata.json")
-                    : await fetch("/stats");
-            const data = await res.json();
-            return data;
+                    : await fetch("http://automobilista.ddns.net:8081/");
+            const dataText = await res.text();
+
+            const dataStartIndex = dataText.indexOf("{");
+            const dataEndIndex = dataText.lastIndexOf("}") + 1;
+
+            return JSON.parse(dataText.slice(dataStartIndex, dataEndIndex));
         });
 
 store.prefetch();
@@ -75,44 +76,16 @@ export function App() {
                     "desc");
             },
             [result]);
-    
-    const [selectedEvent, setSelectedEvent] = useState();
-    return (
-        <Fragment>
-            <Online events={events}/>
-            <List>
-                {_.map(
-                    events,
-                    (event, eventIndex) =>
-                        <ListItemButton
-                            key={eventIndex}
-                            style={{padding: 10}}
-                            onClick={() => setSelectedEvent(event)}>
-                            <Stack
-                                alignItems="center"
-                                direction="row"
-                                spacing={2}>
-                                <Typography style={{fontSize: "1.5rem"}}>
-                                    {getTrackName(event.trackId)}
-                                </Typography>
-                                <Stack
-                                    direction="row"
-                                    spacing={1}>
-                                    <EventTypeChip event={event}/>
-                                    <EventPlayersChip event={event}/>
-                                </Stack>
-                                <Date temporal={event}/>
-                            </Stack>
-                        </ListItemButton>)}
-            </List>
-            <Drawer
-                anchor="right"
-                open={selectedEvent != undefined}
-                onClose={() => setSelectedEvent(undefined)}>
-                {selectedEvent != undefined &&
-                    <Event event={selectedEvent}/>}
-            </Drawer>
-        </Fragment>);
+
+    const {eventId} = useRoute("/{eventId}");
+    console.log({eventId});
+    const event =
+        _.find(
+            events,
+            event => event.id === eventId);
+    return event == undefined
+        ? <Events events={events}/>
+        : <Event event={event}/>;
 }
 
 function getEvent(record) {
@@ -184,6 +157,7 @@ function getEvent(record) {
     return {
         endTime: record.end_time || record.start_time,
         events: 1,
+        id: btoa(record.start_time),
         stageNameToDataMap,
         startTime: record.start_time,
         trackId: record.setup.TrackId,
