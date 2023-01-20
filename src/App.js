@@ -12,13 +12,9 @@ const store =
             const res =
                 window.location.hostname === "localhost"
                     ? await fetch("/testdata.json")
-                    : await fetch("http://automobilista.ddns.net:8081/");
-            const dataText = await res.text();
-
-            const dataStartIndex = dataText.indexOf("{");
-            const dataEndIndex = dataText.lastIndexOf("}") + 1;
-
-            return JSON.parse(dataText.slice(dataStartIndex, dataEndIndex));
+                    : await fetch("/stats");
+            const data = await res.json();
+            return data;
         });
 
 store.prefetch();

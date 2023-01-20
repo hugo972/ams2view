@@ -6,11 +6,7 @@ export function loadUtilData() {
     }
 
     throw (async () => {
-        const utilsDataResponse =
-            window.location.hostname === "localhost"
-                ? await fetch("/utils.json")
-                : await fetch("http://automobilista.ddns.net:8081/utils.json");
-
+        const utilsDataResponse = await fetch("/utils.json");
         utilsData = await utilsDataResponse.json();
     })();
 }
