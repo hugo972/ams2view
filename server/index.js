@@ -8,11 +8,7 @@ const utilsFilePath = "http://automobilista.ddns.net:8081/utils.json";
 const clientBuiltPath = path.join(__dirname, "../build");
 const app = express();
 
-app.get(
-    "/",
-    (req, res) => {
-        res.sendFile(path.join(clientBuiltPath, "index.html"));
-    });
+app.use(express.static(clientBuiltPath));
 
 app.get(
     "/stats",
@@ -43,7 +39,11 @@ app.get(
             });
     });
 
-app.use(express.static(clientBuiltPath));
+app.get(
+    "/*",
+    (req, res) => {
+        res.sendFile(path.join(clientBuiltPath, "index.html"));
+    });
 
 console.log(
     "AMS2 Simrace Server\n\n",
