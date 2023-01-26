@@ -12,9 +12,13 @@ const store =
             const res =
                 window.location.hostname === "localhost"
                     ? await fetch("/testdata.json")
-                    : await fetch("/stats");
-            const data = await res.json();
-            return data;
+                    : await fetch("/data/sms_stats_data.json");
+            const dataText = await res.text();
+
+            const dataStartIndex = dataText.indexOf("{");
+            const dataEndIndex = dataText.lastIndexOf("}") + 1;
+
+            return JSON.parse(dataText.slice(dataStartIndex, dataEndIndex));
         });
 
 store.prefetch();
@@ -74,7 +78,6 @@ export function App() {
             [result]);
 
     const {eventId} = useRoute("/{eventId}");
-    console.log({eventId});
     const event =
         _.find(
             events,
@@ -99,14 +102,30 @@ function getEvent(record) {
         return undefined;
     }
 
-    const participantMap =
-        _.isArray(record.participants)
-            ? _(record.participants).
-                toPairs().
-                keyBy(([participantIndex]) => parseInt(participantIndex) + 1).
-                mapValues(([participantIndex, participant]) => participant).
-                value()
-            : record.participants;
+    function getPlayerData(event) {
+        let participant =
+            _.find(
+                record.participants,
+                participant => participant.RefId.toString() === event.refid.toString());
+        if (participant == undefined &&
+            _.isObject(record.participants)) {
+            participant =
+                _.get(
+                    record.participants,
+                    event.participantid);
+        }
+
+        if (participant == undefined) {
+            console.log("player not found", {event, record});
+            return undefined;
+        }
+
+        return {
+            id: participant.SteamID ?? participant.Name,
+            vehicleId: participant.VehicleId
+        };
+    }
+
     const stageNameToDataMap =
         _(record.stages).
             mapValues(
@@ -116,8 +135,9 @@ function getEvent(record) {
                             filter(
                                 event =>
                                     event.event_name === "Lap" &&
-                                    event.is_player).
-                            groupBy(event => participantMap[event.participantid].SteamID).
+                                    event.is_player &&
+                                    getPlayerData(event) != undefined).
+                            groupBy(event => getPlayerData(event).id).
                             mapValues(
                                 events =>
                                     _(events).
@@ -136,14 +156,15 @@ function getEvent(record) {
                                                         value(),
                                                 time: event.time,
                                                 valid: event.attributes.CountThisLapTimes === 1,
-                                                vehicleId: participantMap[event.participantid].VehicleId
+                                                vehicleId: getPlayerData(event).vehicleId
                                             })).
                                         filter(event => event.sectors.length === 3).
                                         value()).
                             value(),
                     playerIdToPositionMap:
                         _(stage.results).
-                            keyBy(result => participantMap[result.participantid].SteamID).
+                            filter(result => getPlayerData(result) != undefined).
+                            keyBy(result => getPlayerData(result).id).
                             mapValues(result => result.attributes.RacePosition).
                             value()
                 })).

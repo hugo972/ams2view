@@ -1,5 +1,4 @@
 {
-  "testdata": true,
   "playerIdToNameMap": {
     "76561199217542200": "Avihai",
     "76561199262975610": "Barak",
@@ -11,14 +10,34 @@
     "76561198840080513": "Yariv",
     "76561198085065530": "Yaron",
     "76561198218026987": "Akiva",
-    "76561198847610319": "Yoram"
+    "76561199391998545": "Eliran",
+    "76561198303279535": "Asi",
+    "76561198847610319": "Yoram",
+    "23289leviavihai": "Avihai",
+    "barakc972": "Barak",
+    "nst972": "Moshe",
+    "nivyz": "Niv",
+    "saardekel": "Saar",
+    "Tom M": "Tom",
+    "tzion.azar": "Tzion",
+    "Yariv G": "Yariv",
+    "Saturn010111": "Yaron",
+    "AkiFly": "Akiva",
+    "k.elirans": "Eliran",
+    "asibitton": "Asi",
+    "yoramw": "Yoram"
   },
   "trackIdToNameMap": {
     "-191952188": "Watkins Glen",
     "1534602052": "Brands Hatch",
-    "1820168870": "Oulton Park Island"
+    "-1235504884": "VIR South",
+    "1820168870": "Oulton Park Island",
+    "2074495683": "Taruma Internacional"
   },
   "vehicleIdToNameMap": {
-    "1785300635": "Aussie Racing Camero"
+    "-751207847": "Ginetta G40C Cup",
+    "-830134672": "Lotus 23",
+    "1785300635": "Aussie Racing Camero",
+    "1330326301": "MINI Cooper S 1965"
   }
 }

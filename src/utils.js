@@ -6,7 +6,10 @@ export function loadUtilData() {
     }
 
     throw (async () => {
-        const utilsDataResponse = await fetch("/utils.json");
+        const utilsDataResponse =
+            window.location.hostname === "localhost"
+                ? await fetch("/utils.json")
+                : await fetch("/data/utils.json");
         utilsData = await utilsDataResponse.json();
     })();
 }
